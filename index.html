@@ -157,9 +157,21 @@
   <section class="section" id="kontakt">
     <div class="wrap">
       <h2>Kontakt</h2>
-      <p class="sub">Das Formular verschickt noch nichts – das richten wir im nächsten Schritt mit Formspree ein.</p>
+      <p class="sub">Schildern Sie uns Ihr Anliegen – Sie erhalten in der Regel innert 24 Stunden eine Antwort.</p>
 
-      <form class="form" onsubmit="return false">
+      <!-- PLATZHALTER: DEINE_FORM_ID in der naechsten Zeile durch die echte
+           Formspree-ID ersetzen. Sie steht nach dem Anlegen des Formulars auf
+           formspree.io und sieht etwa so aus: xayzbwqr
+           Vorher verschickt das Formular nichts. -->
+      <form class="form" action="https://formspree.io/f/DEINE_FORM_ID" method="POST">
+
+        <!-- Nach dem Absenden landet der Besucher auf der Danke-Seite. -->
+        <input type="hidden" name="_next" value="https://canuma36.github.io/Scoff/danke.html">
+        <!-- Betreffzeile der Mail, die bei euch ankommt. -->
+        <input type="hidden" name="_subject" value="Neue Anfrage über die Website">
+        <!-- Spamfalle: für Menschen unsichtbar. Füllt ein Bot sie aus,
+             verwirft Formspree die Anfrage. -->
+        <input type="text" name="_gotcha" class="gotcha" tabindex="-1" autocomplete="off">
         <div class="form-row">
           <div>
             <label for="name">Name
@@ -212,6 +224,7 @@
     <div>
       <strong>Rechtliches</strong>
       <a href="impressum.html">Impressum</a><br>
+      <a href="datenschutz.html">Datenschutz</a><br>
       <span>© <span id="jahr">2026</span> Scoff</span>
     </div>
   </div>

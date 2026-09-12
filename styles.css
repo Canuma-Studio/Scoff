@@ -256,6 +256,9 @@ h3 { font-size: 1.12rem; font-weight: 700; margin: 0 0 .5rem; }
 .form textarea { min-height: 130px; resize: vertical; }
 .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1.1rem; }
 
+/* Spamfalle im Kontaktformular – darf nie sichtbar sein. */
+.gotcha { position: absolute; left: -9999px; width: 1px; height: 1px; }
+
 /* --- 10. Fusszeile ------------------------------------------------------- */
 .site-footer {
   background: var(--dark); color: #8d98a3;
@@ -293,6 +296,19 @@ h3 { font-size: 1.12rem; font-weight: 700; margin: 0 0 .5rem; }
   padding: .9rem 1.1rem;
   color: var(--ink);
   font-size: .9rem;
+}
+
+/* Danke-Seite nach dem Absenden des Formulars */
+.danke { text-align: center; }
+.danke h1 { max-width: none; margin-inline: auto; }
+.danke .lead { margin-inline: auto; }
+
+.danke-icon {
+  width: 64px; height: 64px; border-radius: 50%;
+  background: var(--accent-soft); color: var(--accent);
+  display: grid; place-items: center;
+  font-size: 1.8rem; font-weight: 800;
+  margin: 0 auto 1.6rem;
 }
 
 /* --- 12. Handy und kleine Bildschirme ------------------------------------ */
