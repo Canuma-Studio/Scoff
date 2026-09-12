@@ -172,13 +172,12 @@ h3 { font-size: 1.12rem; font-weight: 700; margin: 0 0 .5rem; }
   gap: 1rem; padding-block: 1.1rem;
 }
 
+/* In der Kopfzeile steht nur das Emblem - der Name steht gross im Hero. */
 .logo {
-  display: flex; align-items: center; gap: .65rem;
-  font-weight: 800; letter-spacing: .16em; font-size: 1.2rem;
-  color: #fff; text-decoration: none;
+  display: flex; align-items: center;
+  text-decoration: none;
 }
 
-/* Das runde Logo. Die Bilddatei ist bereits kreisrund freigestellt. */
 .logo-bild { width: var(--logo-klein); height: var(--logo-klein); }
 
 .nav a {
