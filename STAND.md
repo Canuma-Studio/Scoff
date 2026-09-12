@@ -48,18 +48,29 @@ Die Startseite steht und ist online. Alle Texte sind noch Platzhalter.
 ## Ablauf beim Arbeiten
 
 ```
-tippen + Cmd+S   →  Live Server zeigt es sofort (nur lokal)
-git commit       →  Stand gesichert (nur auf dem Mac)
-git push         →  Live-Seite aktualisiert sich (1–2 Minuten)
+Claude ändert die Dateien
+Philipp schaut im Live Server        (Rechtsklick → Open with Live Server)
+Claude commitet, wenn der Diff passt
+Philipp pusht                        → Live-Seite aktualisiert sich (1–2 Min)
 ```
 
-Hochladen:
+Philipps Befehl ist damit meist nur noch:
 
 ```bash
-git add -A && git commit -m "was geändert wurde" && git push
+git push
 ```
+
+## Zu Beginn jeder neuen Sitzung
+
+Claude braucht einmal Löschrechte im Ordner `/Users/canuma/Projekt`
+(`device_request_delete_permission`). Die Freigabe gilt nur für die laufende
+Sitzung. Ohne sie kann Git seine Sperrdateien nicht aufräumen und Commits
+scheitern mit `Unable to create .git/index.lock`.
+
+Wichtig: die Freigabe muss für **`/Users/canuma/Projekt`** angefragt werden,
+nicht für den Unterordner `scoff` – auf der tieferen Ebene greift sie nicht.
 
 ## Bekannte Stolpersteine
 
-- **`fatal: Unable to create .git/index.lock: File exists`** – entsteht, wenn Claude von aussen in das Repo geschaut hat. Lösung: `rm -f .git/index.lock` vor den Commit-Befehl setzen.
+- **`fatal: Unable to create .git/index.lock: File exists`** – Löschrechte fehlen (siehe oben). Sofortlösung: `rm -f .git/index.lock` vor den Befehl setzen.
 - Beim Einfügen ins Terminal kann `[200~` vor dem Befehl landen (`zsh: bad pattern`). Einfach nochmal einfügen.
