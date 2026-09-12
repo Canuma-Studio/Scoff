@@ -235,6 +235,54 @@ h3 { font-size: 1.12rem; font-weight: 700; margin: 0 0 .5rem; }
 
 .split { display: grid; grid-template-columns: 1fr 1fr; gap: var(--gap); }
 
+/* Produktkarten im Sortiment */
+.produkt {
+  background: #fff;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* contain statt cover: die Flasche wird nie angeschnitten */
+.produkt-bild {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: contain;
+  background: #fff;
+  padding: 1.4rem;
+}
+
+.produkt-text { padding: 0 1.6rem 1.8rem; }
+.produkt-text p { color: var(--muted); font-size: .94rem; margin: 0 0 .7rem; }
+.produkt-text p:last-child { margin-bottom: 0; }
+
+.produkt .produkt-herkunft {
+  color: var(--accent);
+  font-weight: 700;
+  font-size: .78rem;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  margin-bottom: .9rem;
+}
+
+/* Karte ohne Foto, die auf das restliche Sortiment hinweist */
+.produkt--mehr {
+  background: transparent;
+  box-shadow: none;
+  border: 1px dashed var(--line);
+  justify-content: center;
+}
+.produkt--mehr .produkt-text { padding: 2rem 1.8rem; }
+
+/* Kleiner rechtlicher Hinweis unter dem Sortiment */
+.hinweis-klein {
+  color: var(--muted);
+  font-size: .82rem;
+  margin: 2.5rem 0 0;
+}
+
 /* Personen im Team-Abschnitt */
 .team {
   display: grid;
