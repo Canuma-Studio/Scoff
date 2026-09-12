@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Scoff – Entwurf A (seriös)</title>
+<style>
+  :root{
+    --bg:#ffffff; --bg-soft:#f5f7f9;
+    --ink:#16212e; --muted:#5b6b7c; --line:#dfe4ea;
+    --accent:#0f3d5c; --accent-ink:#ffffff;
+    --space:1.5rem; --radius:4px;
+    --font:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:var(--font);color:var(--ink);background:var(--bg);line-height:1.65;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 var(--space)}
+  a{color:var(--accent)}
+  .draft{background:#fff8e1;border-bottom:1px solid #f0e0a8;color:#6b5600;font-size:.8rem;text-align:center;padding:.5rem}
+
+  /* Header */
+  header{border-bottom:1px solid var(--line);background:var(--bg);position:sticky;top:0;z-index:10}
+  .bar{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:1rem 0;flex-wrap:wrap}
+  .logo{font-weight:700;letter-spacing:.14em;font-size:1.15rem}
+  nav a{margin-left:1.5rem;text-decoration:none;color:var(--muted);font-size:.92rem}
+  nav a:hover{color:var(--ink)}
+  .tel{font-size:.92rem;color:var(--ink);text-decoration:none;font-weight:600}
+
+  /* Hero */
+  .hero{padding:5rem 0;border-bottom:1px solid var(--line)}
+  .hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:3rem;align-items:center}
+  h1{font-size:2.4rem;line-height:1.2;margin:0 0 1rem;font-weight:650;letter-spacing:-.01em}
+  .lead{font-size:1.1rem;color:var(--muted);margin:0 0 2rem;max-width:44ch}
+  .btn{display:inline-block;background:var(--accent);color:var(--accent-ink);text-decoration:none;padding:.85rem 1.6rem;border-radius:var(--radius);font-weight:600;font-size:.95rem}
+  .btn-ghost{background:none;color:var(--accent);border:1px solid var(--line);margin-left:.5rem}
+  .ph{background:var(--bg-soft);border:1px solid var(--line);border-radius:var(--radius);aspect-ratio:4/3;display:grid;place-items:center;color:#9aa7b4;font-size:.85rem}
+
+  /* Sections */
+  section{padding:4.5rem 0;border-bottom:1px solid var(--line)}
+  h2{font-size:1.6rem;margin:0 0 .5rem;font-weight:650;letter-spacing:-.01em}
+  .sub{color:var(--muted);margin:0 0 2.5rem;max-width:60ch}
+  h3{font-size:1.02rem;margin:0 0 .4rem;font-weight:650}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.25rem}
+  .card{border:1px solid var(--line);border-radius:var(--radius);padding:1.5rem}
+  .card p{margin:0;color:var(--muted);font-size:.93rem}
+  .num{color:var(--accent);font-size:.8rem;font-weight:700;letter-spacing:.1em;display:block;margin-bottom:.6rem}
+
+  /* Zielgruppen */
+  .split{display:grid;grid-template-columns:1fr 1fr;gap:1.25rem}
+  .split .card{background:var(--bg-soft);border-color:transparent}
+
+  /* Kontakt */
+  form{display:grid;gap:1rem;max-width:520px}
+  label{font-size:.85rem;font-weight:600}
+  input,textarea,select{width:100%;padding:.7rem .8rem;border:1px solid var(--line);border-radius:var(--radius);font:inherit;font-size:.95rem;margin-top:.35rem;background:var(--bg)}
+  textarea{min-height:120px;resize:vertical}
+  .cols{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+
+  footer{padding:3rem 0;color:var(--muted);font-size:.9rem}
+  .fgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:2rem}
+  footer strong{color:var(--ink)}
+  footer a{color:var(--muted)}
+
+  @media (max-width:760px){
+    .hero-grid,.split,.cols{grid-template-columns:1fr}
+    .hero{padding:3rem 0}
+    h1{font-size:1.9rem}
+    nav{display:none}
+  }
+</style>
+</head>
+<body>
+<div class="draft">Entwurf A – „seriös &amp; ruhig“. Alle Texte und Bilder sind Platzhalter.</div>
+
+<header>
+  <div class="wrap bar">
+    <div class="logo">SCOFF</div>
+    <nav>
+      <a href="#leistungen">Leistungen</a>
+      <a href="#ablauf">Ablauf</a>
+      <a href="#ueber">Über uns</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+    <a class="tel" href="tel:+41000000000">+41 00 000 00 00</a>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <h1>Import und Export – wir übernehmen die Abwicklung.</h1>
+      <p class="lead">Verzollung, Transport und Papierkram für Firmen und Privatpersonen. Sie sagen uns, was wohin soll – den Rest erledigen wir.</p>
+      <a class="btn" href="#kontakt">Anfrage senden</a>
+      <a class="btn btn-ghost" href="#leistungen">Leistungen ansehen</a>
+    </div>
+    <div class="ph">Bild folgt</div>
+  </div>
+</div>
+
+<section id="leistungen">
+  <div class="wrap">
+    <h2>Leistungen</h2>
+    <p class="sub">Platzhalter – hier kommen die Leistungen rein, die dein Kollege tatsächlich anbietet.</p>
+    <div class="grid">
+      <div class="card"><h3>Verzollung</h3><p>Import- und Exportverzollung, Zollanmeldung, Abklärung von Abgaben und Bewilligungen.</p></div>
+      <div class="card"><h3>Transport &amp; Spedition</h3><p>Organisation des Transports per Strasse, See oder Luft – national und international.</p></div>
+      <div class="card"><h3>Import-Abwicklung</h3><p>Von der Bestellung im Ausland bis zur Lieferung an Ihre Adresse in der Schweiz.</p></div>
+      <div class="card"><h3>Export-Abwicklung</h3><p>Dokumente, Ursprungsnachweise und Versand für Ihre Ware ins Ausland.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Für wen wir arbeiten</h2>
+    <p class="sub">Zwei sehr unterschiedliche Bedürfnisse – darum gleich am Anfang getrennt.</p>
+    <div class="split">
+      <div class="card">
+        <h3>Für Firmen</h3>
+        <p>Laufende Import- und Exportabwicklung, feste Ansprechperson, Abrechnung pro Sendung oder im Mandat.</p>
+      </div>
+      <div class="card">
+        <h3>Für Privatpersonen</h3>
+        <p>Einzelne Sendungen, Umzugsgut, Fahrzeuge oder Online-Bestellungen aus dem Ausland – inklusive Verzollung.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="ablauf">
+  <div class="wrap">
+    <h2>So läuft es ab</h2>
+    <p class="sub">Vier Schritte, kein Fachchinesisch.</p>
+    <div class="grid">
+      <div class="card"><span class="num">01</span><h3>Anfrage</h3><p>Sie schildern uns, was Sie versenden oder einführen möchten.</p></div>
+      <div class="card"><span class="num">02</span><h3>Offerte</h3><p>Sie erhalten eine klare Kostenübersicht – ohne versteckte Positionen.</p></div>
+      <div class="card"><span class="num">03</span><h3>Abwicklung</h3><p>Wir kümmern uns um Transport, Dokumente und Zoll.</p></div>
+      <div class="card"><span class="num">04</span><h3>Lieferung</h3><p>Die Ware kommt an, Sie erhalten alle Unterlagen.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="ueber">
+  <div class="wrap hero-grid">
+    <div>
+      <h2>Über Scoff</h2>
+      <p class="sub" style="margin-bottom:1rem">Platzhalter: drei bis fünf Sätze, wer dahintersteht, seit wann, und warum man gerade hier richtig ist. Das ist der Text, der am meisten über Vertrauen entscheidet – darum sollte ihn dein Kollege selbst schreiben.</p>
+      <p class="sub">Ein zweiter Absatz kann Zahlen bringen: seit wann tätig, welche Länder, wie viele Sendungen pro Jahr.</p>
+    </div>
+    <div class="ph">Foto folgt</div>
+  </div>
+</section>
+
+<section id="kontakt">
+  <div class="wrap">
+    <h2>Kontakt</h2>
+    <p class="sub">Das Formular versendet im Entwurf noch nichts – das kommt später über Formspree.</p>
+    <form onsubmit="return false">
+      <div class="cols">
+        <div><label>Name<input type="text" placeholder="Vor- und Nachname"></label></div>
+        <div><label>E-Mail<input type="email" placeholder="name@beispiel.ch"></label></div>
+      </div>
+      <label>Ich bin<select><option>Privatperson</option><option>Firma</option></select></label>
+      <label>Ihre Anfrage<textarea placeholder="Was soll wohin? Um welche Ware geht es?"></textarea></label>
+      <div><button class="btn" type="submit">Anfrage senden</button></div>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap fgrid">
+    <div><strong>Scoff</strong><br>Strasse 1<br>8000 Zürich</div>
+    <div><strong>Kontakt</strong><br>+41 00 000 00 00<br>info@scoff.ch</div>
+    <div><strong>Öffnungszeiten</strong><br>Mo–Fr 08:00–17:00</div>
+    <div><a href="#">Impressum</a> · <a href="#">Datenschutz</a></div>
+  </div>
+</footer>
+</body>
+</html>
