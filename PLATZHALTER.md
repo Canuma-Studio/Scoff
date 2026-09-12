@@ -15,12 +15,17 @@ Diese Liste abarbeiten, dann ist die Seite fertig.
 - [ ] **UID-Nummer** (CHE-xxx.xxx.xxx) – nur falls im Handelsregister eingetragen,
       sonst die Zeile ersatzlos löschen
 - [ ] **Öffnungszeiten**
-- [ ] **Leistungen** – welche genau, für welche Länder
+- [ ] **Gründungsjahr und Anzahl Produzenten** – für die Zeile unter dem Hero
+- [ ] **Sortiment** – welche Produkte, welche Produzenten, welche Regionen
+- [ ] **Produktnamen bestätigen** – „Urbano", „Lacrima di Morro d'Alba" und
+      „Essenza Visciola" sind von den Etiketten der Fotos abgelesen
+- [ ] **Beschreibungstexte** – ein bis zwei Sätze pro Produkt
+- [ ] **Preisliste als PDF** – für den Download-Knopf
 - [ ] **Über-uns-Text** – 3 bis 5 Sätze in seinen eigenen Worten
-- [ ] **Fotos und Logo**
+- [ ] **Weitere Fotos** – Logo und drei Produktfotos sind da; es fehlen ein
+      Bild für den Über-uns-Bereich und die zwei Portraits
 - [ ] **Die zwei Personen** – Vorname, Nachname, Funktion, je ein Satz,
-      je ein Portraitfoto (moeglichst quadratisch, wird rund beschnitten)
-- [ ] **Gründungsjahr und Anzahl Länder** – für die Zeile unter dem Hero
+      je ein Portraitfoto (möglichst quadratisch, wird rund beschnitten)
 
 ## 2. Formspree einrichten
 
