@@ -18,6 +18,8 @@ Diese Liste abarbeiten, dann ist die Seite fertig.
 - [ ] **Leistungen** – welche genau, für welche Länder
 - [ ] **Über-uns-Text** – 3 bis 5 Sätze in seinen eigenen Worten
 - [ ] **Fotos und Logo**
+- [ ] **Die zwei Personen** – Vorname, Nachname, Funktion, je ein Satz,
+      je ein Portraitfoto (moeglichst quadratisch, wird rund beschnitten)
 - [ ] **Gründungsjahr und Anzahl Länder** – für die Zeile unter dem Hero
 
 ## 2. Formspree einrichten
@@ -41,7 +43,7 @@ grep -rn "PLATZHALTER" .
 
 | Datei | Was |
 |---|---|
-| `index.html` | Meta-Beschreibung, Hero-Texte, Zeile „Seit JAHR · über X Länder", Leistungen, Über-uns-Text, Foto, Formspree-ID, Footer |
+| `index.html` | Meta-Beschreibung, Hero-Texte, Zeile „Seit JAHR · über X Länder", Leistungen, Über-uns-Text, Fotos, Team (2 Personen), Formspree-ID, Footer |
 | `impressum.html` | Firmenangaben, UID-Zeile, Hinweiskasten löschen |
 | `datenschutz.html` | Firmenangaben, Hinweiskasten löschen |
 | `danke.html` | Footer |
@@ -63,3 +65,18 @@ und werden ersetzt durch:
 ```html
 <img src="images/team.jpg" alt="Kurze Beschreibung des Bildes">
 ```
+
+Die Portraits im Team-Abschnitt sind eigene Platzhalter:
+
+```html
+<div class="person-foto person-foto--leer" aria-hidden="true">Foto folgt</div>
+```
+
+werden ersetzt durch:
+
+```html
+<img class="person-foto" src="images/person-1.jpg" alt="Portrait von Vorname Nachname">
+```
+
+Jedes `<img>` braucht einen `alt`-Text – eine kurze Beschreibung des Bildes.
+Den liest ein Screenreader vor, und er erscheint, wenn das Bild nicht laedt.
