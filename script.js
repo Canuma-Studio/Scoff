@@ -28,3 +28,43 @@ const jahr = document.getElementById('jahr');
 if (jahr) {
   jahr.textContent = new Date().getFullYear();
 }
+
+/* --- Slider fürs Sortiment ------------------------------------------------
+   Die Spur lässt sich von Haus aus wischen. Dieses Stück fügt die beiden
+   Pfeilknöpfe hinzu und schaltet sie aus, wenn es nichts mehr zu blättern gibt.
+   -------------------------------------------------------------------------- */
+const spur = document.getElementById('sortiment-spur');
+
+if (spur) {
+  const knoepfe = document.querySelectorAll('.slider-knopf');
+
+  // Um wie viel wird geblättert? Um die Breite einer Karte plus Abstand.
+  function schrittweite() {
+    const karte = spur.querySelector('.produkt');
+    if (!karte) return spur.clientWidth;
+    const abstand = parseFloat(getComputedStyle(spur).columnGap) || 0;
+    return karte.offsetWidth + abstand;
+  }
+
+  knoepfe.forEach((knopf) => {
+    knopf.addEventListener('click', () => {
+      const richtung = Number(knopf.dataset.richtung);
+      spur.scrollBy({ left: richtung * schrittweite(), behavior: 'smooth' });
+    });
+  });
+
+  // Knöpfe ausgrauen, wenn der Anfang oder das Ende erreicht ist
+  function knoepfePruefen() {
+    const maximum = spur.scrollWidth - spur.clientWidth;
+    knoepfe.forEach((knopf) => {
+      const richtung = Number(knopf.dataset.richtung);
+      const amAnfang = spur.scrollLeft <= 1;
+      const amEnde = spur.scrollLeft >= maximum - 1;
+      knopf.disabled = richtung < 0 ? amAnfang : amEnde;
+    });
+  }
+
+  spur.addEventListener('scroll', knoepfePruefen, { passive: true });
+  window.addEventListener('resize', knoepfePruefen);
+  knoepfePruefen();
+}

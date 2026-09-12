@@ -20,7 +20,7 @@
 <header class="site-header">
   <div class="wrap">
     <a class="logo" href="index.html">
-      <img class="logo-bild" src="images/scoff-logo.png" alt="" width="40" height="40">
+      <img class="logo-bild" src="images/scoff-logo.png" alt="" width="56" height="56">
       <span>SCOFF</span>
     </a>
 
@@ -51,6 +51,9 @@
     <div class="wrap">
       <!-- PLATZHALTER: Diese drei Zeilen sind das Wichtigste der ganzen Seite.
            Sie sollten in den Worten deines Kollegen stehen, nicht in meinen. -->
+      <img class="hero-logo" src="images/scoff-logo.png"
+           alt="Logo von Scoff: Messer und Gabel über der italienischen und der Schweizer Flagge"
+           width="160" height="160">
       <p class="eyebrow">Italien · Schweiz</p>
       <h1>Italienische Weine und Spezialitäten. Direkt importiert.</h1>
       <p class="lead">Wir holen kleine italienische Produzenten in die Schweiz – ohne Zwischenhändler. Import und Verzollung machen wir selbst, Sie erhalten die Ware und eine Rechnung.</p>
@@ -69,11 +72,18 @@
            bestätigen lassen. Ich habe sie von den Etiketten der Fotos abgelesen. -->
       <p class="sub">Ein erster Ausschnitt. Das vollständige Sortiment mit Preisen schicken wir Ihnen gerne zu.</p>
 
-      <div class="grid">
+      <div class="slider">
+        <button class="slider-knopf slider-knopf--zurueck" type="button" data-richtung="-1">
+          <span aria-hidden="true">‹</span>
+          <span class="visually-hidden">Vorheriges Produkt</span>
+        </button>
+
+        <div class="slider-spur" id="sortiment-spur" role="region"
+             aria-label="Produkte im Sortiment" tabindex="0">
 
         <article class="produkt">
           <img class="produkt-bild" src="images/wein-urbano.jpg"
-               alt="Flasche Urbano, Vino Rosso von Federico Mencaroni" width="900" height="1600" loading="lazy">
+               alt="Flasche Urbano, Vino Rosso von Federico Mencaroni" width="456" height="1400" loading="lazy">
           <div class="produkt-text">
             <h3>Urbano</h3>
             <p class="produkt-herkunft">Vino Rosso · Federico Mencaroni</p>
@@ -83,7 +93,7 @@
 
         <article class="produkt">
           <img class="produkt-bild" src="images/wein-lacrima.jpg"
-               alt="Flasche Lacrima di Morro d'Alba von Federico Mencaroni" width="900" height="1600" loading="lazy">
+               alt="Flasche Lacrima di Morro d'Alba von Federico Mencaroni" width="432" height="1400" loading="lazy">
           <div class="produkt-text">
             <h3>Lacrima di Morro d'Alba</h3>
             <p class="produkt-herkunft">Rotwein · Federico Mencaroni</p>
@@ -93,7 +103,7 @@
 
         <article class="produkt">
           <img class="produkt-bild" src="images/likoer-visciola.jpg"
-               alt="Flasche Essenza Visciola, italienischer Sauerkirschlikör" width="900" height="1600" loading="lazy">
+               alt="Flasche Essenza Visciola, italienischer Sauerkirschlikör" width="344" height="1400" loading="lazy">
           <div class="produkt-text">
             <h3>Essenza Visciola</h3>
             <p class="produkt-herkunft">Likör</p>
@@ -112,7 +122,15 @@
           </div>
         </article>
 
+        </div>
+
+        <button class="slider-knopf slider-knopf--vor" type="button" data-richtung="1">
+          <span aria-hidden="true">›</span>
+          <span class="visually-hidden">Nächstes Produkt</span>
+        </button>
       </div>
+
+      <p class="slider-hinweis">Zum Blättern wischen oder die Pfeile benutzen.</p>
 
       <p class="hinweis-klein">Wein und Bier geben wir nur an Personen ab 16 Jahren ab, Spirituosen und Liköre nur an Personen ab 18 Jahren.</p>
     </div>
