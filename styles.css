@@ -192,6 +192,10 @@ h3 { font-size: 1.12rem; font-weight: 700; margin: 0 0 .5rem; }
   gap: .5rem;
 }
 
+/* Knopf im aufgeklappten Handy-Menü. Auf dem Desktop unsichtbar,
+   dort steht der Knopf rechts in der Kopfzeile. */
+.nav-cta { display: none; }
+
 .nav-toggle {
   display: none;
   background: none; border: 0; cursor: pointer;
@@ -218,7 +222,14 @@ h3 { font-size: 1.12rem; font-weight: 700; margin: 0 0 .5rem; }
 }
 .hero .lead { color: var(--on-dark); }
 .hero-note { margin-top: 2.5rem; color: #78848f; font-size: .85rem; }
-.hero .btn + .btn { margin-left: .6rem; }
+
+/* Die beiden Knöpfe im Hero. flex mit gap statt margin-left:
+   so stehen sie beim Umbrechen sauber untereinander. */
+.hero-aktionen {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .7rem;
+}
 
 /* --- 8. Karten und Panels ------------------------------------------------ */
 .card {
@@ -490,7 +501,30 @@ h3 { font-size: 1.12rem; font-weight: 700; margin: 0 0 .5rem; }
   .split,
   .form-row { grid-template-columns: 1fr; }
 
-  .hero { padding-block: 4rem 4.5rem; }
+  /* Oben weniger Luft, damit die Schlagzeile frueher sichtbar ist */
+  .hero { padding-block: 2.5rem 3.5rem; }
+  .hero-logo { margin-bottom: 1.2rem; }
+
+  /* Knoepfe ueber die volle Breite: klar untereinander und gut zu treffen */
+  .hero-aktionen .btn {
+    flex: 1 1 100%;
+    text-align: center;
+  }
+
+  /* Kopfzeile entlasten: nur Logo und Menuezeichen.
+     Der Anfrage-Knopf wandert ins aufgeklappte Menue. */
+  .header-cta { display: none; }
+
+  .nav .nav-cta {
+    display: block;
+    margin-top: 1rem;
+    padding: .85rem 1.2rem;
+    background: var(--accent);
+    color: var(--accent-ink);
+    border-radius: 999px;
+    text-align: center;
+    font-weight: 700;
+  }
 
   /* Auf dem Handy wird gewischt, die Pfeile braucht es nicht */
   .slider-knopf { display: none; }
@@ -511,6 +545,9 @@ h3 { font-size: 1.12rem; font-weight: 700; margin: 0 0 .5rem; }
     background: var(--dark);
     padding: 1rem var(--gap) 1.5rem;
     border-top: 1px solid rgba(255, 255, 255, .1);
+    /* Schatten nach unten, damit sich das Menue sichtbar vom
+       ebenfalls dunklen Hero abhebt */
+    box-shadow: 0 18px 30px rgba(0, 0, 0, .45);
   }
   .nav[data-open="true"] { display: block; }
   .nav a { display: block; margin: 0; padding: .7rem 0; font-size: 1rem; }
