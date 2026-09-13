@@ -4,7 +4,7 @@
 > Neuer Chat? Zuerst diese Datei lesen, dann weitermachen.
 > Claude aktualisiert sie am Ende jeder Sitzung.
 
-**Letzte Aktualisierung:** 12.09.2026
+**Letzte Aktualisierung:** 13.09.2026
 
 ---
 
@@ -17,8 +17,8 @@ die kommen am Montag vom Kollegen. Die Checkliste dafür ist `PLATZHALTER.md`.
 - **Repo:** https://github.com/Canuma36/Scoff (Branch `main`)
 - **Lokal:** `/Users/canuma/Projekt/Webseiten/scoff`
 
-**Achtung – noch nicht gepusht.** Die Arbeit vom 12.09. liegt als Commits
-lokal. Der nächste `git push` bringt alles auf einmal live.
+Die Seite ist gepusht und live. Am Computer gefällt sie Philipp so;
+das Handy-Layout ist ebenfalls durchgearbeitet.
 
 ---
 
@@ -65,6 +65,11 @@ Entschieden dazu:
       zugeschnitten, von je 3–5 MB auf je rund 60 KB
 - [x] Sortiment als Slider: wischen auf dem Handy, Pfeile am Computer
 - [x] `PLATZHALTER.md` als Checkliste für Montag
+- [x] Handy-Layout überarbeitet: Kopfzeile geht in den Hero über (grosses
+      Logo links, Menüzeichen rechts, kein Balken), Logo schrumpft beim
+      Scrollen gleitend auf 44 px; Hero-Knöpfe auf dem Handy ausgeblendet,
+      Anfrage-Knopf sitzt stattdessen im aufgeklappten Menü
+- [x] Versionsnummer an `styles.css` und `script.js` gegen den Zwischenspeicher
 
 ## Als Nächstes
 
