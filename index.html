@@ -19,9 +19,15 @@
 <!-- ===================== Kopfzeile ===================== -->
 <header class="site-header">
   <div class="wrap">
-    <a class="logo" href="index.html">
-      <img class="logo-bild" src="images/scoff-emblem.png"
-           alt="Scoff – zur Startseite" width="56" height="56">
+    <!-- Zwei Fassungen des Logos. Welche zu sehen ist, entscheidet styles.css:
+         am Computer das Zeichen, auf dem Handy oben das vollständige Logo und
+         nach dem Scrollen Zeichen plus Schriftzug. -->
+    <a class="logo" href="index.html" aria-label="Scoff – zur Startseite">
+      <img class="logo-bild logo-bild--voll" src="images/scoff-logo.png"
+           alt="" width="110" height="110">
+      <img class="logo-bild logo-bild--zeichen" src="images/scoff-emblem.png"
+           alt="" width="56" height="56">
+      <span class="logo-wort">SCOFF</span>
     </a>
 
     <nav class="nav" id="hauptnavigation" aria-label="Hauptnavigation">

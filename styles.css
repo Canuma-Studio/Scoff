@@ -25,7 +25,7 @@
 
   /* Bausteine mit fester Groesse */
   --logo-klein:          56px;   /* Logo in der Kopfzeile */
-  --logo-handy-gross:    96px;   /* Symbol oben auf dem Handy, vor dem Scrollen */
+  --logo-handy-gross:    118px;  /* vollstaendiges Logo oben auf dem Handy */
   --logo-hero:           150px;  /* grosses Logo im Hero */
   --header-hoehe:        96px;   /* damit Ankerlinks nicht darunter rutschen */
   --produkt-bild-hoehe:  340px;  /* Hoehe der Flaschenfotos */
@@ -182,8 +182,12 @@ h3 { font-size: 1.12rem; font-weight: 700; margin: 0 0 .5rem; }
 .logo-bild {
   width: var(--logo-klein);
   height: var(--logo-klein);
-  transition: width .2s ease, height .2s ease;
 }
+
+/* Am Computer steht in der Kopfzeile nur das Zeichen; der Name steht
+   gross im Hero. Die beiden anderen Fassungen sind fuer das Handy. */
+.logo-bild--voll { display: none; }
+.logo-wort { display: none; }
 
 .nav a {
   margin-left: 1.6rem; text-decoration: none;
@@ -528,10 +532,13 @@ h3 { font-size: 1.12rem; font-weight: 700; margin: 0 0 .5rem; }
     backdrop-filter: none;
   }
   .site-header .wrap { padding-block: 1.2rem; }
-  .logo-bild {
+  /* Ganz oben: das vollstaendige Logo mit dem Schriftzug SCOFF */
+  .logo-bild--voll {
+    display: block;
     width: var(--logo-handy-gross);
     height: var(--logo-handy-gross);
   }
+  .logo-bild--zeichen { display: none; }
 
   /* Sobald gescrollt wird, schrumpft das Symbol und die Kopfzeile bekommt
      einen Schatten. So bleibt das Menue immer erreichbar, ohne dass oben
@@ -540,9 +547,22 @@ h3 { font-size: 1.12rem; font-weight: 700; margin: 0 0 .5rem; }
     box-shadow: 0 6px 20px rgba(0, 0, 0, .35);
   }
   .site-header--gescrollt .wrap { padding-block: .7rem; }
-  .site-header--gescrollt .logo-bild {
+
+  /* Nach dem Scrollen: Zeichen und Schriftzug nebeneinander. So bleibt der
+     Name sichtbar, ohne dass die Leiste hoch wird. */
+  .site-header--gescrollt .logo-bild--voll { display: none; }
+  .site-header--gescrollt .logo-bild--zeichen {
+    display: block;
     width: var(--logo-klein);
     height: var(--logo-klein);
+  }
+  .site-header--gescrollt .logo-wort {
+    display: block;
+    margin-left: .6rem;
+    color: #fff;
+    font-weight: 800;
+    font-size: 1.1rem;
+    letter-spacing: .16em;
   }
 
   /* Der Hero schliesst direkt an die Kopfzeile an */
