@@ -25,6 +25,7 @@
 
   /* Bausteine mit fester Groesse */
   --logo-klein:          56px;   /* Logo in der Kopfzeile */
+  --logo-handy-gross:    96px;   /* Symbol oben auf dem Handy, vor dem Scrollen */
   --logo-hero:           150px;  /* grosses Logo im Hero */
   --header-hoehe:        96px;   /* damit Ankerlinks nicht darunter rutschen */
   --produkt-bild-hoehe:  340px;  /* Hoehe der Flaschenfotos */
@@ -178,7 +179,11 @@ h3 { font-size: 1.12rem; font-weight: 700; margin: 0 0 .5rem; }
   text-decoration: none;
 }
 
-.logo-bild { width: var(--logo-klein); height: var(--logo-klein); }
+.logo-bild {
+  width: var(--logo-klein);
+  height: var(--logo-klein);
+  transition: width .2s ease, height .2s ease;
+}
 
 .nav a {
   margin-left: 1.6rem; text-decoration: none;
@@ -501,10 +506,6 @@ h3 { font-size: 1.12rem; font-weight: 700; margin: 0 0 .5rem; }
   .split,
   .form-row { grid-template-columns: 1fr; }
 
-  /* Oben weniger Luft, damit die Schlagzeile frueher sichtbar ist */
-  .hero { padding-block: 2.5rem 3.5rem; }
-  .hero-logo { margin-bottom: 1.2rem; }
-
   /* Knoepfe ueber die volle Breite: klar untereinander und gut zu treffen */
   .hero-aktionen .btn {
     flex: 1 1 100%;
@@ -515,10 +516,37 @@ h3 { font-size: 1.12rem; font-weight: 700; margin: 0 0 .5rem; }
      Der Anfrage-Knopf wandert ins aufgeklappte Menue. */
   .header-cta { display: none; }
 
-  /* Auf dem Handy stehen Emblem und grosses Logo zu dicht uebereinander
-     und wirken wie dasselbe Zeichen zweimal. Das Emblem in der Kopfzeile
-     traegt die Marke, das grosse Logo im Hero entfaellt hier. */
+  /* Auf dem Handy gibt es nur ein Logo: das grosse Symbol oben in der
+     Kopfzeile. Das Logo im Hero entfaellt hier. */
   .hero-logo { display: none; }
+
+  /* Die Kopfzeile hat oben denselben Farbton wie der Hero und keinen Rand -
+     dadurch wirkt sie wie ein Teil des Heros statt wie ein Balken.
+     Links das grosse Symbol, rechts die drei Striche. */
+  .site-header {
+    background: var(--dark);
+    backdrop-filter: none;
+  }
+  .site-header .wrap { padding-block: 1.2rem; }
+  .logo-bild {
+    width: var(--logo-handy-gross);
+    height: var(--logo-handy-gross);
+  }
+
+  /* Sobald gescrollt wird, schrumpft das Symbol und die Kopfzeile bekommt
+     einen Schatten. So bleibt das Menue immer erreichbar, ohne dass oben
+     ein Balken im Weg ist. */
+  .site-header--gescrollt {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, .35);
+  }
+  .site-header--gescrollt .wrap { padding-block: .7rem; }
+  .site-header--gescrollt .logo-bild {
+    width: var(--logo-klein);
+    height: var(--logo-klein);
+  }
+
+  /* Der Hero schliesst direkt an die Kopfzeile an */
+  .hero { padding-block: 1.5rem 3.5rem; }
 
   .nav .nav-cta {
     display: block;

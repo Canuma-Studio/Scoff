@@ -68,3 +68,20 @@ if (spur) {
   window.addEventListener('resize', knoepfePruefen);
   knoepfePruefen();
 }
+
+/* --- Kopfzeile beim Scrollen ---------------------------------------------
+   Auf dem Handy sitzt oben das grosse Symbol und die Kopfzeile hat denselben
+   Farbton wie der Hero – sie wirkt dadurch wie ein Teil davon. Sobald der
+   Besucher scrollt, bekommt sie eine Klasse: das Symbol schrumpft und ein
+   Schatten kommt dazu. Am Computer ändert die Klasse nichts.
+   -------------------------------------------------------------------------- */
+const kopfzeile = document.querySelector('.site-header');
+
+if (kopfzeile) {
+  function kopfzeilePruefen() {
+    kopfzeile.classList.toggle('site-header--gescrollt', window.scrollY > 30);
+  }
+
+  window.addEventListener('scroll', kopfzeilePruefen, { passive: true });
+  kopfzeilePruefen();
+}
