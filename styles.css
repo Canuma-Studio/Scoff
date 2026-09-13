@@ -515,6 +515,11 @@ h3 { font-size: 1.12rem; font-weight: 700; margin: 0 0 .5rem; }
      Der Anfrage-Knopf wandert ins aufgeklappte Menue. */
   .header-cta { display: none; }
 
+  /* Auf dem Handy stehen Emblem und grosses Logo zu dicht uebereinander
+     und wirken wie dasselbe Zeichen zweimal. Das Emblem in der Kopfzeile
+     traegt die Marke, das grosse Logo im Hero entfaellt hier. */
+  .hero-logo { display: none; }
+
   .nav .nav-cta {
     display: block;
     margin-top: 1rem;
