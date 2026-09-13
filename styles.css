@@ -510,11 +510,13 @@ h3 { font-size: 1.12rem; font-weight: 700; margin: 0 0 .5rem; }
   .split,
   .form-row { grid-template-columns: 1fr; }
 
-  /* Knoepfe ueber die volle Breite: klar untereinander und gut zu treffen */
-  .hero-aktionen .btn {
-    flex: 1 1 100%;
-    text-align: center;
-  }
+  /* Auf dem Handy brauchen die zwei Hero-Knoepfe nicht zu sein: das Sortiment
+     folgt direkt darunter, und der Anfrage-Knopf steckt im Menue. */
+  .hero-aktionen { display: none; }
+
+  /* Ohne die Knoepfe die Abstaende im Hero nachziehen */
+  .hero .lead { margin-bottom: 0; }
+  .hero-note { margin-top: 1.6rem; }
 
   /* Kopfzeile entlasten: nur Logo und Menuezeichen.
      Der Anfrage-Knopf wandert ins aufgeklappte Menue. */
