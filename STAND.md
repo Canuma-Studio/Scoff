@@ -13,9 +13,14 @@
 Die Seite ist inhaltlich fertig gebaut. Es fehlen nur noch echte Daten –
 die kommen am Montag vom Kollegen. Die Checkliste dafür ist `PLATZHALTER.md`.
 
-- **Live:** https://canuma36.github.io/Scoff/
-- **Repo:** https://github.com/Canuma36/Scoff (Branch `main`)
-- **Lokal:** `/Users/canuma/Projekt/Webseiten/scoff`
+- **Live:** https://canuma-studio.github.io/Scoff/
+- **Repo:** https://github.com/Canuma-Studio/Scoff (Branch `main`)
+- **Lokal (MacBook):** `/Users/canuma/Projekt/Webseiten/scoff`
+- **Lokal (Windows-PC):** `C:\Projekt\Webseiten\scoff`
+
+Philipp hat seinen GitHub-Benutzernamen am 13.09.2026 von `Canuma36` auf
+`Canuma-Studio` geändert. Die alten Adressen leiten weiter, sind aber überall
+nachzuziehen – am MacBook steht der Git-Remote noch auf dem alten Namen.
 
 Die Seite ist gepusht und live. Am Computer gefällt sie Philipp so;
 das Handy-Layout ist ebenfalls durchgearbeitet.
@@ -70,6 +75,8 @@ Entschieden dazu:
       Scrollen gleitend auf 44 px; Hero-Knöpfe auf dem Handy ausgeblendet,
       Anfrage-Knopf sitzt stattdessen im aufgeklappten Menü
 - [x] Versionsnummer an `styles.css` und `script.js` gegen den Zwischenspeicher
+- [x] Windows-PC eingerichtet: Repo nach `C:\Projekt\Webseiten\scoff` geklont,
+      VS Code mit Live Server, Git-Identität gesetzt
 
 ## Als Nächstes
 
@@ -81,7 +88,9 @@ Entschieden dazu:
        d'Alba", „Essenza Visciola" sind von den Etiketten abgelesen
 5. [ ] **Portraits der zwei Personen** einsetzen
 6. [ ] `git push` – dann geht alles live
-7. [ ] Später: eigene Domain, Englisch als zweite Sprache
+7. [ ] **Git-Remote am MacBook** auf den neuen Namen umstellen:
+       `git remote set-url origin https://github.com/Canuma-Studio/Scoff.git`
+8. [ ] Später: eigene Domain, Englisch als zweite Sprache
 
 ## Warten auf den Kollegen
 
@@ -127,7 +136,35 @@ Philipps Befehl ist damit meist nur noch:
 git push
 ```
 
+## Zwei Geräte – MacBook und Windows-PC
+
+Seit dem 13.09.2026 liegt das Projekt auf beiden Geräten. GitHub ist die
+Brücke dazwischen. Eiserne Regel, sonst laufen die Stände auseinander:
+
+```
+vor dem Arbeiten:    git pull
+nach dem Arbeiten:   git push
+```
+
+Nie an beiden Geräten gleichzeitig arbeiten, ohne dazwischen zu pushen.
+
+**Unterschied beim Arbeiten:**
+
+| | MacBook | Windows-PC |
+|---|---|---|
+| Ordner | `/Users/canuma/Projekt/Webseiten/scoff` | `C:\Projekt\Webseiten\scoff` |
+| Claude ändert Dateien | ja | ja |
+| Claude führt Befehle aus | ja | **nein** |
+| Git-Befehle tippt | Claude (Commit), Philipp (Push) | Philipp, Claude gibt sie vor |
+
+Auf dem PC startet der Linux-Workspace der Cowork-Verbindung nicht
+(Windows-Update vom 08.09.2026). Claude kann dort Dateien lesen und schreiben,
+aber keine Befehle ausführen. Alle Terminal-Befehle bekommt Philipp fertig zum
+Kopieren und führt sie selbst im VS-Code-Terminal aus.
+
 ## Zu Beginn jeder neuen Sitzung
+
+**Am MacBook:**
 
 1. Ordnerzugriff auf `/Users/canuma/Projekt` anfragen
    (`device_request_folder_access`) – der Ordner ist nicht dauerhaft verbunden.
@@ -138,6 +175,13 @@ git push
 
 Wichtig: beides für `/Users/canuma/Projekt`, nicht für den Unterordner
 `scoff` – auf der tieferen Ebene greift es nicht.
+
+**Am Windows-PC:**
+
+1. Ordnerzugriff auf `C:\Projekt` anfragen (`device_request_folder_access`).
+2. Löschrechte braucht es dort nicht – Git läuft ja über Philipps eigenes
+   Terminal.
+3. Philipp mit `git pull` starten lassen, bevor irgendetwas geändert wird.
 
 ## Bekannte Stolpersteine
 
