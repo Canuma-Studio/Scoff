@@ -140,5 +140,10 @@ Wichtig: beides für `/Users/canuma/Projekt`, nicht für den Unterordner
   fehlen (siehe oben). Sofortlösung: `rm -f .git/index.lock` vor den Befehl.
 - Beim Einfügen ins Terminal kann `[200~` vor dem Befehl landen
   (`zsh: bad pattern`). Einfach nochmal einfügen.
+- **Handy zeigt die alte Fassung.** Safari behält `styles.css` und `script.js`
+  hartnäckig im Zwischenspeicher. Ein `?v=` an der Seitenadresse hilft dabei
+  **nicht** – das erneuert nur die HTML-Datei. Richtig ist: in allen vier
+  HTML-Dateien die Versionsnummer hinter `styles.css?v=` und `script.js?v=`
+  hochzählen. Das gehört nach jeder Änderung an diesen beiden Dateien gemacht.
 - Kamerafotos sind 3–5 MB gross und müssen vor dem Einbauen verkleinert
   werden, sonst lädt die Seite auf dem Handy ewig. Zielgrösse rund 60 KB.
