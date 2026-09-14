@@ -15,7 +15,7 @@
   <!-- Die Nummer hinter dem Dateinamen ist die Version. Wird sie erhöht,
        holen Browser die Datei neu statt aus dem Zwischenspeicher.
        Nach jeder Änderung an styles.css oder script.js hochzählen. -->
-  <link rel="stylesheet" href="styles.css?v=9">
+  <link rel="stylesheet" href="styles.css?v=10">
 </head>
 
 <body>
@@ -78,9 +78,7 @@
     <section class="section" id="sortiment">
       <div class="wrap">
         <h2>Auszug aus dem Sortiment</h2>
-        <!-- PLATZHALTER: Namen, Herkunft und Beschreibungen unbedingt vom Kollegen
-           bestätigen lassen. Ich habe sie von den Etiketten der Fotos abgelesen. -->
-        <p class="sub">Ein erster Ausschnitt. Das vollständige Sortiment mit Preisen schicken wir Ihnen gerne zu.</p>
+          <p class="sub">Ein erster Ausschnitt. Das vollständige Sortiment mit Preisen schicken wir Ihnen gerne zu.</p>
 
         <div class="slider">
           <button class="slider-knopf slider-knopf--zurueck" type="button" data-richtung="-1">
@@ -94,9 +92,16 @@
               <img class="produkt-bild" src="images/wein-urbano.jpg"
                 alt="Flasche Urbano, Vino Rosso von Federico Mencaroni" width="456" height="1400" loading="lazy">
               <div class="produkt-text">
-                <h3>Urbano</h3>
-                <p class="produkt-herkunft">Vino Rosso · Federico Mencaroni</p>
-                <p>PLATZHALTER – ein bis zwei Sätze zum Wein: Rebsorte, Charakter, wozu er passt.</p>
+                <h3>Urbano Blu 2022</h3>
+                <p class="produkt-herkunft">Limited Edition · Federico Mencaroni</p>
+                <ul class="produkt-daten">
+                  <li>Sangiovese</li>
+                  <li>Guyot-Erziehung</li>
+                  <li>18 Monate im Barrique ausgebaut</li>
+                  <li>12 Monate Flaschenreifung</li>
+                  <li>15.5 % vol</li>
+                  <li>0.75 l</li>
+                </ul>
               </div>
             </article>
 
@@ -104,9 +109,14 @@
               <img class="produkt-bild" src="images/wein-lacrima.jpg"
                 alt="Flasche Lacrima di Morro d'Alba von Federico Mencaroni" width="432" height="1400" loading="lazy">
               <div class="produkt-text">
-                <h3>Lacrima di Morro d'Alba</h3>
+                <h3>Lacrima di Morro d'Alba 2024</h3>
                 <p class="produkt-herkunft">Rotwein · Federico Mencaroni</p>
-                <p>PLATZHALTER – ein bis zwei Sätze zum Wein: Rebsorte, Charakter, wozu er passt.</p>
+                <ul class="produkt-daten">
+                  <li>Lacrima di Morro d’Alba</li>
+                  <li>Guyot-Erziehung</li>
+                  <li>12.5 % vol</li>
+                  <li>0.75 l</li>
+                </ul>
               </div>
             </article>
 
@@ -114,9 +124,13 @@
               <img class="produkt-bild" src="images/likoer-visciola.jpg"
                 alt="Flasche Essenza Visciola, italienischer Sauerkirschlikör" width="344" height="1400" loading="lazy">
               <div class="produkt-text">
-                <h3>Essenza Visciola</h3>
-                <p class="produkt-herkunft">Likör</p>
-                <p>PLATZHALTER – ein bis zwei Sätze zum Likör: woraus er gemacht ist und wann man ihn trinkt.</p>
+                <h3>Essenza di Visciola</h3>
+                <p class="produkt-herkunft">Likör · Azienda Agricola Luca Tenti</p>
+                <ul class="produkt-daten">
+                  <li>Weichselkirsche</li>
+                  <li>18 % vol</li>
+                  <li>0.5 l</li>
+                </ul>
               </div>
             </article>
 
@@ -205,13 +219,12 @@
       <div class="wrap">
         <div>
           <h2>Über SCOFF</h2>
-          <!-- PLATZHALTER: drei bis fünf Sätze von deinem Kollegen selbst.
-             Wer dahintersteht, seit wann, wie er zu den Produzenten gekommen ist. -->
-          <p class="sub sub--tight">Hier stehen drei bis fünf Sätze darüber, wer hinter SCOFF steht, seit wann es die
-            Firma gibt und wie die Verbindung nach Italien entstanden ist. Dieser Text entscheidet am meisten über
-            Vertrauen.</p>
-          <p class="sub">Ein zweiter Absatz kann konkret werden: welche Regionen, wie viele Produzenten, was als
-            Nächstes dazukommt.</p>
+          <p class="sub sub--tight">Aus der Freundschaft von Samuele und Stefano, die sich im marchigianischen Dorf
+            Corinaldo kennenlernten, entstand das Projekt SCOFF aus einer gemeinsamen Leidenschaft für authentisches
+            Essen.</p>
+          <p class="sub">Heute bringen die beiden handverlesene Spezialitäten von kleinen italienischen Manufakturen
+            ohne Zwischenhändler direkt in die Schweiz. SCOFF liefert den echten, unverfälschten Geschmack der
+            italienischen Tradition direkt auf den Tisch Schweizer Kunden.</p>
         </div>
       </div>
     </section>
@@ -228,8 +241,8 @@
             <!-- PLATZHALTER: sobald das Foto da ist, das div durch dieses img ersetzen:
                <img class="person-foto" src="images/person-1.jpg" alt="Portrait von VORNAME NACHNAME"> -->
             <div class="person-foto person-foto--leer" aria-hidden="true">Foto folgt</div>
-            <!-- PLATZHALTER: echten Namen, Funktion und einen Satz eintragen. -->
-            <h3>Vorname Nachname</h3>
+            <!-- PLATZHALTER: Funktion und den Satz eintragen, sobald sie da sind. -->
+            <h3>Stefano Hoffmeister</h3>
             <p class="person-rolle">Funktion</p>
             <p>Ein Satz dazu, wofür diese Person zuständig ist und was Kunden von ihr erwarten können.</p>
             <p class="person-kontakt">
@@ -241,8 +254,8 @@
             <!-- PLATZHALTER: sobald das Foto da ist, das div durch dieses img ersetzen:
                <img class="person-foto" src="images/person-2.jpg" alt="Portrait von VORNAME NACHNAME"> -->
             <div class="person-foto person-foto--leer" aria-hidden="true">Foto folgt</div>
-            <!-- PLATZHALTER: echten Namen, Funktion und einen Satz eintragen. -->
-            <h3>Vorname Nachname</h3>
+            <!-- PLATZHALTER: Nachname, Funktion und den Satz eintragen, sobald sie da sind. -->
+            <h3>Samuele</h3>
             <p class="person-rolle">Funktion</p>
             <p>Ein Satz dazu, wofür diese Person zuständig ist und was Kunden von ihr erwarten können.</p>
             <p class="person-kontakt">
@@ -321,11 +334,11 @@
   <!-- ===================== Fusszeile ===================== -->
   <footer class="site-footer">
     <div class="wrap">
-      <!-- PLATZHALTER: echte Adresse, Telefon und E-Mail eintragen. -->
+      <!-- PLATZHALTER: Telefon und E-Mail fehlen noch. -->
       <div>
         <strong>SCOFF</strong>
-        Strasse 1<br>
-        8000 Zürich
+        Seestrasse 86<br>
+        8803 Rüschlikon
       </div>
       <div>
         <strong>Kontakt</strong>
@@ -345,7 +358,7 @@
     </div>
   </footer>
 
-  <script src="script.js?v=9"></script>
+  <script src="script.js?v=10"></script>
 </body>
 
 </html>
