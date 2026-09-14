@@ -102,21 +102,46 @@ Entschieden dazu:
       SCOFF durchgehend gross; Hero neu; Abschnitt „Für wen wir liefern“,
       Karte „Import und Verzollung inhouse“ und Schritt „Nachbestellen“
       entfernt; Über-uns einspaltig ohne Foto
+- [x] Erste echte Daten eingesetzt: Firmenangaben (im Handelsregister
+      geprüft), Produktangaben als Datenliste, Über-uns-Text, Vornamen
+- [x] Telefonnummer überall entfernt – der Kollege gibt keine an
+- [x] Produktkarten ausgerichtet: Titel und Herkunftszeile bekommen ab 821px
+      Platz für zwei Zeilen, dadurch beginnen die Datenlisten auf gleicher Höhe
+- [x] Fusszeile der drei Unterseiten nachgezogen (trug noch die alte Adresse)
+- [x] Vorschau-Modus eingeschaltet (siehe Warnblock oben)
 - [x] Hero-Überschrift zweiteilig gesetzt (`.h1-zusatz` in `styles.css`):
       „Italienische Feinkost“ gross, „Manufakturprodukte · Weine“ kleiner
       darunter – aus vier gerenderten Varianten ausgewählt
 
 ## Als Nächstes
 
-1. [ ] **Echte Daten einsetzen** – `PLATZHALTER.md` abarbeiten
-2. [ ] **Formspree** – Konto anlegen, Form-ID in `index.html` eintragen,
-       Testanfrage senden
-3. [ ] **Preisliste als PDF** vom Kollegen, Download-Knopf einbauen
-4. [ ] **Produktnamen bestätigen lassen** – „Urbano", „Lacrima di Morro
-       d'Alba", „Essenza Visciola" sind von den Etiketten abgelesen
-5. [ ] **Portraits der zwei Personen** einsetzen
-6. [ ] `git push` – dann geht alles live
-7. [ ] Später: eigene Domain, Englisch als zweite Sprache
+Alles hängt an einem Punkt: **die E-Mail-Adresse**. Stefano richtet sie ein,
+wenn er die Domain `scoff.ch` anlegt (die Domain hat aktuell keinen
+DNS-Eintrag, es läuft dort also noch nichts).
+
+1. [ ] **E-Mail-Adresse einsetzen**, sobald sie da ist – an vier Stellen:
+       Fusszeile aller vier Seiten, Impressum, Datenschutz, Team-Abschnitt.
+       Suchen mit `grep -rn "info@scoff.ch" *.html`.
+       Danach die beiden orangen `platzhalter`-Kästen in `impressum.html`
+       und `datenschutz.html` löschen – dann ist das Impressum vollständig.
+2. [ ] **Formspree** – Konto anlegen, Ziel-E-Mail hinterlegen, `DEINE_FORM_ID`
+       in `index.html` ersetzen, Testanfrage senden, Weiterleitung auf
+       `danke.html` prüfen
+3. [ ] **Portraits und Funktionen** der zwei Personen; Samueles Nachname fehlt
+4. [ ] **Preisliste als PDF** vom Kollegen, Download-Knopf einbauen
+5. [ ] **Öffnungszeiten** – stehen in der Fusszeile noch als Platzhalter
+       (Mo–Fr 08:00–17:00). Bei einem Versandhändler ohne Laden vielleicht
+       besser durch „Erreichbarkeit" ersetzen oder ganz streichen.
+6. [ ] **Vorschau-Modus aufheben** – siehe Warnblock ganz oben
+7. [ ] **Stefano Impressum und Datenschutz lesen und bestätigen lassen.**
+       Er ist als Betreiber verantwortlich, nicht Philipp. Eine kurze
+       schriftliche Bestätigung genügt.
+8. [ ] Später: eigene Domain als Adresse der Website, Englisch als zweite Sprache
+
+**Erledigt am 14.09.2026:** Firmenangaben, Produktangaben, Über-uns-Text und
+die Vornamen sind eingesetzt. Telefonnummer fällt bewusst weg – der Kollege
+gibt keine an, sie ist auch nicht Pflicht. Produktnamen und Jahrgänge sind
+vom Kollegen bestätigt.
 
 ## Offene Frage vom Kollegen
 
