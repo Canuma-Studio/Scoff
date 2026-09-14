@@ -4,7 +4,7 @@
 > Neuer Chat? Zuerst diese Datei lesen, dann weitermachen.
 > Claude aktualisiert sie am Ende jeder Sitzung.
 
-**Letzte Aktualisierung:** 13.09.2026
+**Letzte Aktualisierung:** 14.09.2026
 
 ---
 
@@ -19,8 +19,8 @@ die kommen am Montag vom Kollegen. Die Checkliste dafür ist `PLATZHALTER.md`.
 - **Lokal (Windows-PC):** `C:\Projekt\Webseiten\scoff`
 
 Philipp hat seinen GitHub-Benutzernamen am 13.09.2026 von `Canuma36` auf
-`Canuma-Studio` geändert. Die alten Adressen leiten weiter, sind aber überall
-nachzuziehen – am MacBook steht der Git-Remote noch auf dem alten Namen.
+`Canuma-Studio` geändert. Beide Geräte zeigen auf die neue Adresse, die
+Formular-Weiterleitung ebenfalls.
 
 Die Seite ist gepusht und live. Am Computer gefällt sie Philipp so;
 das Handy-Layout ist ebenfalls durchgearbeitet.
@@ -77,6 +77,14 @@ Entschieden dazu:
 - [x] Versionsnummer an `styles.css` und `script.js` gegen den Zwischenspeicher
 - [x] Windows-PC eingerichtet: Repo nach `C:\Projekt\Webseiten\scoff` geklont,
       VS Code mit Live Server, Git-Identität gesetzt
+- [x] Git-Remote auf beiden Geräten auf `Canuma-Studio` umgestellt
+- [x] Texte nach Philipps Notizen vom 14.09.2026 überarbeitet:
+      SCOFF durchgehend gross; Hero neu; Abschnitt „Für wen wir liefern“,
+      Karte „Import und Verzollung inhouse“ und Schritt „Nachbestellen“
+      entfernt; Über-uns einspaltig ohne Foto
+- [x] Hero-Überschrift zweiteilig gesetzt (`.h1-zusatz` in `styles.css`):
+      „Italienische Feinkost“ gross, „Manufakturprodukte · Weine“ kleiner
+      darunter – aus vier gerenderten Varianten ausgewählt
 
 ## Als Nächstes
 
@@ -88,9 +96,17 @@ Entschieden dazu:
        d'Alba", „Essenza Visciola" sind von den Etiketten abgelesen
 5. [ ] **Portraits der zwei Personen** einsetzen
 6. [ ] `git push` – dann geht alles live
-7. [ ] **Git-Remote am MacBook** auf den neuen Namen umstellen:
-       `git remote set-url origin https://github.com/Canuma-Studio/Scoff.git`
-8. [ ] Später: eigene Domain, Englisch als zweite Sprache
+7. [ ] Später: eigene Domain, Englisch als zweite Sprache
+
+## Offene Frage vom Kollegen
+
+Er hat gefragt, ob er Texte selbst bearbeiten kann. Drei Wege besprochen:
+über Philipp (Aufwand null), direkt auf github.com im Browser (Aufwand null,
+er sieht dabei HTML), oder ein Redaktionssystem mit Login (Umzug zu Netlify,
+Inhalte aus dem HTML herauslösen, Decap CMS – zwei bis drei Sitzungen).
+Entscheidung steht aus; Philipp fragt ihn, **was** er ändern will und **wie oft**.
+Mittelweg wäre, nur das Sortiment in eine eigene Datei auszulagern (zwei bis
+drei Stunden).
 
 ## Warten auf den Kollegen
 

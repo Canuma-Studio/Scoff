@@ -232,6 +232,18 @@ h3 { font-size: 1.12rem; font-weight: 700; margin: 0 0 .5rem; }
   height: var(--logo-hero);
   margin-bottom: 1.8rem;
 }
+/* Zweite Zeile der Hero-Ueberschrift: gleiche Ueberschrift, kleiner gesetzt.
+   Die Groesse ist in em angegeben, haengt also an der Groesse von h1 und
+   waechst und schrumpft mit ihr mit. */
+.h1-zusatz {
+  display: block;
+  font-size: .55em;
+  font-weight: 700;
+  letter-spacing: -.01em;
+  color: var(--on-dark);
+  margin-top: .35em;
+}
+
 .hero .lead { color: var(--on-dark); }
 .hero-note { margin-top: 2.5rem; color: #78848f; font-size: .85rem; }
 
