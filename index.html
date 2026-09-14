@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Scoff – italienische Weine und Spezialitäten in der Schweiz</title>
+  <title>SCOFF – italienische Feinkost und Manufakturprodukte in der Schweiz</title>
   <!-- PLATZHALTER: anpassen, sobald das Sortiment feststeht.
        Dieser Text erscheint bei Google unter dem Titel. -->
-  <meta name="description" content="Scoff bringt italienische Weine und Spezialitäten direkt in die Schweiz – für Gastronomie, Handel und Privatpersonen. Import und Verzollung aus einer Hand.">
+  <meta name="description"
+    content="SCOFF handelt mit italienischer Feinkost, Manufakturprodukten und Weinen. Direktversand aus der Schweiz, mit fester Ansprechperson.">
   <link rel="icon" href="images/favicon-32.png" sizes="32x32">
   <link rel="icon" href="images/favicon-64.png" sizes="64x64">
   <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
@@ -15,366 +17,335 @@
        Nach jeder Änderung an styles.css oder script.js hochzählen. -->
   <link rel="stylesheet" href="styles.css?v=8">
 </head>
+
 <body>
 
-<a class="skip-link" href="#inhalt">Zum Inhalt springen</a>
+  <a class="skip-link" href="#inhalt">Zum Inhalt springen</a>
 
-<!-- ===================== Kopfzeile ===================== -->
-<header class="site-header">
-  <div class="wrap">
-    <!-- Zwei Fassungen des Logos. Welche zu sehen ist, entscheidet styles.css:
+  <!-- ===================== Kopfzeile ===================== -->
+  <header class="site-header">
+    <div class="wrap">
+      <!-- Zwei Fassungen des Logos. Welche zu sehen ist, entscheidet styles.css:
          am Computer das Zeichen, auf dem Handy oben das vollständige Logo und
          nach dem Scrollen Zeichen plus Schriftzug. -->
-    <a class="logo" href="index.html" aria-label="Scoff – zur Startseite">
-      <img class="logo-bild logo-bild--voll" src="images/scoff-logo.png"
-           alt="" width="110" height="110">
-      <img class="logo-bild logo-bild--zeichen" src="images/scoff-emblem.png"
-           alt="" width="56" height="56">
-      <span class="logo-wort">SCOFF</span>
-    </a>
+      <a class="logo" href="index.html" aria-label="SCOFF – zur Startseite">
+        <img class="logo-bild logo-bild--voll" src="images/scoff-logo.png" alt="" width="110" height="110">
+        <img class="logo-bild logo-bild--zeichen" src="images/scoff-emblem.png" alt="" width="56" height="56">
+        <span class="logo-wort">SCOFF</span>
+      </a>
 
-    <nav class="nav" id="hauptnavigation" aria-label="Hauptnavigation">
-      <a href="#sortiment">Sortiment</a>
-      <a href="#fuer-wen">Für wen</a>
-      <a href="#ablauf">Ablauf</a>
-      <a href="#ueber-uns">Über uns</a>
-      <a href="#team">Team</a>
-      <a href="#kontakt">Kontakt</a>
-      <!-- Nur im aufgeklappten Handy-Menü sichtbar -->
-      <a class="nav-cta" href="#kontakt">Anfrage senden</a>
-    </nav>
+      <nav class="nav" id="hauptnavigation" aria-label="Hauptnavigation">
+        <a href="#sortiment">Sortiment</a>
+        <a href="#ablauf">Ablauf</a>
+        <a href="#ueber-uns">Über uns</a>
+        <a href="#team">Team</a>
+        <a href="#kontakt">Kontakt</a>
+        <!-- Nur im aufgeklappten Handy-Menü sichtbar -->
+        <a class="nav-cta" href="#kontakt">Anfrage senden</a>
+      </nav>
 
-    <div class="header-actions">
-      <a class="btn btn--small header-cta" href="#kontakt">Anfrage senden</a>
-      <button class="nav-toggle" id="nav-toggle"
-              aria-expanded="false" aria-controls="hauptnavigation">
-        <span aria-hidden="true">☰</span>
-        <span class="visually-hidden">Menü öffnen</span>
-      </button>
-    </div>
-  </div>
-</header>
-
-<main id="inhalt">
-
-  <!-- ===================== Hero ===================== -->
-  <div class="hero">
-    <div class="wrap">
-      <!-- PLATZHALTER: Diese drei Zeilen sind das Wichtigste der ganzen Seite.
-           Sie sollten in den Worten deines Kollegen stehen, nicht in meinen. -->
-      <img class="hero-logo" src="images/scoff-logo.png"
-           alt="Logo von Scoff: Messer und Gabel über der italienischen und der Schweizer Flagge"
-           width="160" height="160">
-      <p class="eyebrow">Italien · Schweiz</p>
-      <h1>Italienische Weine und Spezialitäten. Direkt importiert.</h1>
-      <p class="lead">Wir holen kleine italienische Produzenten in die Schweiz – ohne Zwischenhändler. Import und Verzollung machen wir selbst, Sie erhalten die Ware und eine Rechnung.</p>
-      <div class="hero-aktionen">
-        <a class="btn" href="#sortiment">Sortiment ansehen</a>
-        <a class="btn btn--light" href="#kontakt">Preisliste anfragen</a>
-      </div>
-      <!-- PLATZHALTER: echte Zahlen einsetzen oder die Zeile ganz löschen. -->
-      <p class="hero-note">Seit JAHR · X Produzenten · Lieferung in der ganzen Schweiz</p>
-    </div>
-  </div>
-
-  <!-- ===================== Sortiment ===================== -->
-  <section class="section" id="sortiment">
-    <div class="wrap">
-      <h2>Aus dem Sortiment</h2>
-      <!-- PLATZHALTER: Namen, Herkunft und Beschreibungen unbedingt vom Kollegen
-           bestätigen lassen. Ich habe sie von den Etiketten der Fotos abgelesen. -->
-      <p class="sub">Ein erster Ausschnitt. Das vollständige Sortiment mit Preisen schicken wir Ihnen gerne zu.</p>
-
-      <div class="slider">
-        <button class="slider-knopf slider-knopf--zurueck" type="button" data-richtung="-1">
-          <span aria-hidden="true">‹</span>
-          <span class="visually-hidden">Vorheriges Produkt</span>
+      <div class="header-actions">
+        <a class="btn btn--small header-cta" href="#kontakt">Anfrage senden</a>
+        <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="hauptnavigation">
+          <span aria-hidden="true">☰</span>
+          <span class="visually-hidden">Menü öffnen</span>
         </button>
+      </div>
+    </div>
+  </header>
 
-        <div class="slider-spur" id="sortiment-spur" role="region"
-             aria-label="Produkte im Sortiment" tabindex="0">
+  <main id="inhalt">
 
-        <article class="produkt">
-          <img class="produkt-bild" src="images/wein-urbano.jpg"
-               alt="Flasche Urbano, Vino Rosso von Federico Mencaroni" width="456" height="1400" loading="lazy">
-          <div class="produkt-text">
-            <h3>Urbano</h3>
-            <p class="produkt-herkunft">Vino Rosso · Federico Mencaroni</p>
-            <p>PLATZHALTER – ein bis zwei Sätze zum Wein: Rebsorte, Charakter, wozu er passt.</p>
-          </div>
-        </article>
+    <!-- ===================== Hero ===================== -->
+    <div class="hero">
+      <div class="wrap">
+        <!-- PLATZHALTER: Diese drei Zeilen sind das Wichtigste der ganzen Seite.
+           Sie sollten in den Worten deines Kollegen stehen, nicht in meinen. -->
+        <img class="hero-logo" src="images/scoff-logo.png"
+          alt="Logo von SCOFF: Messer und Gabel über der italienischen und der Schweizer Flagge" width="160"
+          height="160">
+        <p class="eyebrow">Italien · Schweiz</p>
+        <h1>Italienische Feinkost · Manufakturprodukte · Weine</h1>
+        <p class="lead">Handel mit italienischen Manufakturprodukten. Direktversand aus der Schweiz.</p>
+        <div class="hero-aktionen">
+          <a class="btn btn--light" href="#kontakt">Preisliste anfragen</a>
+        </div>
+        <p class="hero-note">Seit 2026 · Lieferung in der ganzen Schweiz</p>
+      </div>
+    </div>
 
-        <article class="produkt">
-          <img class="produkt-bild" src="images/wein-lacrima.jpg"
-               alt="Flasche Lacrima di Morro d'Alba von Federico Mencaroni" width="432" height="1400" loading="lazy">
-          <div class="produkt-text">
-            <h3>Lacrima di Morro d'Alba</h3>
-            <p class="produkt-herkunft">Rotwein · Federico Mencaroni</p>
-            <p>PLATZHALTER – ein bis zwei Sätze zum Wein: Rebsorte, Charakter, wozu er passt.</p>
-          </div>
-        </article>
+    <!-- ===================== Sortiment ===================== -->
+    <section class="section" id="sortiment">
+      <div class="wrap">
+        <h2>Auszug aus dem Sortiment</h2>
+        <!-- PLATZHALTER: Namen, Herkunft und Beschreibungen unbedingt vom Kollegen
+           bestätigen lassen. Ich habe sie von den Etiketten der Fotos abgelesen. -->
+        <p class="sub">Ein erster Ausschnitt. Das vollständige Sortiment mit Preisen schicken wir Ihnen gerne zu.</p>
 
-        <article class="produkt">
-          <img class="produkt-bild" src="images/likoer-visciola.jpg"
-               alt="Flasche Essenza Visciola, italienischer Sauerkirschlikör" width="344" height="1400" loading="lazy">
-          <div class="produkt-text">
-            <h3>Essenza Visciola</h3>
-            <p class="produkt-herkunft">Likör</p>
-            <p>PLATZHALTER – ein bis zwei Sätze zum Likör: woraus er gemacht ist und wann man ihn trinkt.</p>
-          </div>
-        </article>
+        <div class="slider">
+          <button class="slider-knopf slider-knopf--zurueck" type="button" data-richtung="-1">
+            <span aria-hidden="true">‹</span>
+            <span class="visually-hidden">Vorheriges Produkt</span>
+          </button>
 
-        <!-- PLATZHALTER: Sobald weitere Kategorien feststehen (Olivenöl, Pasta,
+          <div class="slider-spur" id="sortiment-spur" role="region" aria-label="Produkte im Sortiment" tabindex="0">
+
+            <article class="produkt">
+              <img class="produkt-bild" src="images/wein-urbano.jpg"
+                alt="Flasche Urbano, Vino Rosso von Federico Mencaroni" width="456" height="1400" loading="lazy">
+              <div class="produkt-text">
+                <h3>Urbano</h3>
+                <p class="produkt-herkunft">Vino Rosso · Federico Mencaroni</p>
+                <p>PLATZHALTER – ein bis zwei Sätze zum Wein: Rebsorte, Charakter, wozu er passt.</p>
+              </div>
+            </article>
+
+            <article class="produkt">
+              <img class="produkt-bild" src="images/wein-lacrima.jpg"
+                alt="Flasche Lacrima di Morro d'Alba von Federico Mencaroni" width="432" height="1400" loading="lazy">
+              <div class="produkt-text">
+                <h3>Lacrima di Morro d'Alba</h3>
+                <p class="produkt-herkunft">Rotwein · Federico Mencaroni</p>
+                <p>PLATZHALTER – ein bis zwei Sätze zum Wein: Rebsorte, Charakter, wozu er passt.</p>
+              </div>
+            </article>
+
+            <article class="produkt">
+              <img class="produkt-bild" src="images/likoer-visciola.jpg"
+                alt="Flasche Essenza Visciola, italienischer Sauerkirschlikör" width="344" height="1400" loading="lazy">
+              <div class="produkt-text">
+                <h3>Essenza Visciola</h3>
+                <p class="produkt-herkunft">Likör</p>
+                <p>PLATZHALTER – ein bis zwei Sätze zum Likör: woraus er gemacht ist und wann man ihn trinkt.</p>
+              </div>
+            </article>
+
+            <!-- PLATZHALTER: Sobald weitere Kategorien feststehen (Olivenöl, Pasta,
              Salumi, Käse …), hier weitere Karten nach demselben Muster ergänzen.
              Diese Karte bis dahin stehen lassen oder löschen. -->
-        <article class="produkt produkt--mehr">
-          <div class="produkt-text">
-            <h3>Und mehr</h3>
-            <p>Das Sortiment wächst laufend. Sagen Sie uns, was Sie suchen – wir sagen Ihnen, ob wir es bekommen.</p>
-            <p><a href="#kontakt">Sortiment anfragen</a></p>
+            <article class="produkt produkt--mehr">
+              <div class="produkt-text">
+                <h3>Und mehr</h3>
+                <p>Das Sortiment wächst laufend. Sagen Sie uns, was Sie suchen – wir sagen Ihnen, ob wir es bekommen.
+                </p>
+                <p><a href="#kontakt">Sortiment anfragen</a></p>
+              </div>
+            </article>
+
           </div>
-        </article>
 
+          <button class="slider-knopf slider-knopf--vor" type="button" data-richtung="1">
+            <span aria-hidden="true">›</span>
+            <span class="visually-hidden">Nächstes Produkt</span>
+          </button>
         </div>
 
-        <button class="slider-knopf slider-knopf--vor" type="button" data-richtung="1">
-          <span aria-hidden="true">›</span>
-          <span class="visually-hidden">Nächstes Produkt</span>
-        </button>
+        <p class="slider-hinweis">Zum Blättern wischen oder die Pfeile benutzen.</p>
+
+        <p class="hinweis-klein">Wein und Bier geben wir nur an Personen ab 16 Jahren ab, Spirituosen und Liköre nur an
+          Personen ab 18 Jahren.</p>
       </div>
+    </section>
 
-      <p class="slider-hinweis">Zum Blättern wischen oder die Pfeile benutzen.</p>
+    <!-- ===================== Warum SCOFF ===================== -->
+    <section class="section section--soft" id="direktimport">
+      <div class="wrap">
+        <h2>Warum über uns</h2>
+        <p class="sub">Persönlicher und direkter Kontakt zu unseren Kunden. Direktversand aus der Schweiz.</p>
 
-      <p class="hinweis-klein">Wein und Bier geben wir nur an Personen ab 16 Jahren ab, Spirituosen und Liköre nur an Personen ab 18 Jahren.</p>
-    </div>
-  </section>
-
-  <!-- ===================== Warum Scoff ===================== -->
-  <section class="section section--soft" id="direktimport">
-    <div class="wrap">
-      <h2>Warum über uns</h2>
-      <p class="sub">Wir sind Importeur und Händler in einem. Das merkt man am Preis und an der Auskunft.</p>
-
-      <div class="grid">
-        <article class="card">
-          <div class="badge" aria-hidden="true">01</div>
-          <h3>Direkt vom Produzenten</h3>
-          <p>Wir kaufen bei den Betrieben selbst ein und kennen die Leute dahinter. Kein Zwischenhandel, keine anonyme Lieferkette.</p>
-        </article>
-        <article class="card">
-          <div class="badge" aria-hidden="true">02</div>
-          <h3>Import und Verzollung inhouse</h3>
-          <p>Transport, Zoll und Abgaben wickeln wir selbst ab. Sie bekommen einen Preis, der bereits alles enthält.</p>
-        </article>
-        <article class="card">
-          <div class="badge" aria-hidden="true">03</div>
-          <h3>Auch kleine Mengen</h3>
-          <p>Ob eine Palette für den Betrieb oder ein einzelner Karton nach Hause – beides geht.</p>
-        </article>
-        <article class="card">
-          <div class="badge" aria-hidden="true">04</div>
-          <h3>Eine Ansprechperson</h3>
-          <p>Sie schreiben einer Person und bekommen von dieser Person eine Antwort. Keine Hotline, kein Ticketsystem.</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===================== Zielgruppen ===================== -->
-  <section class="section" id="fuer-wen">
-    <div class="wrap">
-      <h2>Für wen wir liefern</h2>
-      <p class="sub">Zwei sehr unterschiedliche Bedürfnisse – darum von Anfang an getrennt.</p>
-
-      <div class="split">
-        <div class="panel panel--dark">
-          <h3>Gastronomie und Handel</h3>
-          <p>Regelmässige Lieferungen, Konditionen nach Menge, Musterflaschen zum Probieren und Unterstützung bei der Kartengestaltung. Auf Wunsch führen wir Produkte exklusiv für Sie ein.</p>
-          <a class="btn" href="#kontakt">Als Betrieb anfragen</a>
-        </div>
-        <div class="panel">
-          <h3>Privatpersonen</h3>
-          <p>Einzelne Flaschen, gemischte Kartons oder ein Geschenk. Sie schreiben uns, was Sie mögen, und erhalten einen Vorschlag mit Preis und Lieferzeit.</p>
-          <a class="btn" href="#kontakt">Als Privatperson anfragen</a>
+        <div class="grid">
+          <article class="card">
+            <div class="badge" aria-hidden="true">01</div>
+            <h3>Direkt vom Produzenten</h3>
+            <p>Wir kaufen bei den Betrieben selbst ein und kennen die Leute dahinter. Kein Zwischenhandel, keine anonyme
+              Lieferkette.</p>
+          </article>
+          <article class="card">
+            <div class="badge" aria-hidden="true">02</div>
+            <h3>Auch kleine Mengen</h3>
+            <p>Bestellungen ab einem Produkt versandkostenfrei. Grössere Mengen auf Anfrage.</p>
+          </article>
+          <article class="card">
+            <div class="badge" aria-hidden="true">03</div>
+            <h3>Eine Ansprechperson</h3>
+            <p>Direkter Ansprechpartner in der Schweiz. Keine Hotline, kein Ticketsystem.</p>
+          </article>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ===================== Ablauf ===================== -->
-  <section class="section section--soft" id="ablauf">
-    <div class="wrap">
-      <h2>So läuft eine Bestellung</h2>
-      <p class="sub">Vier Schritte, kein Fachchinesisch.</p>
+    <!-- ===================== Ablauf ===================== -->
+    <section class="section section--soft" id="ablauf">
+      <div class="wrap">
+        <h2>So läuft eine Bestellung</h2>
+        <p class="sub">Drei Schritte, kein Fachchinesisch.</p>
 
-      <div class="grid">
-        <article class="card">
-          <div class="badge" aria-hidden="true">1</div>
-          <h3>Anfrage</h3>
-          <p>Sie schreiben uns, was Sie suchen – oder lassen sich die Preisliste schicken.</p>
-        </article>
-        <article class="card">
-          <div class="badge" aria-hidden="true">2</div>
-          <h3>Vorschlag</h3>
-          <p>Sie erhalten eine Auswahl mit Preisen. Betriebe bekommen auf Wunsch Muster zum Probieren.</p>
-        </article>
-        <article class="card">
-          <div class="badge" aria-hidden="true">3</div>
-          <h3>Lieferung</h3>
-          <p>Wir liefern in der ganzen Schweiz. Zoll und Abgaben sind im Preis bereits enthalten.</p>
-        </article>
-        <article class="card">
-          <div class="badge" aria-hidden="true">4</div>
-          <h3>Nachbestellen</h3>
-          <p>Eine kurze Nachricht genügt. Wir wissen, was Sie zuletzt hatten.</p>
-        </article>
+        <div class="grid">
+          <article class="card">
+            <div class="badge" aria-hidden="true">1</div>
+            <h3>Anfrage</h3>
+            <p>Über unser Kontaktformular.</p>
+          </article>
+          <article class="card">
+            <div class="badge" aria-hidden="true">2</div>
+            <h3>Vorschlag</h3>
+            <p>Sie erhalten unsere Produktliste und Preise per Mail.</p>
+          </article>
+          <article class="card">
+            <div class="badge" aria-hidden="true">3</div>
+            <h3>Lieferung</h3>
+            <p>Direktversand aus der Schweiz in die Schweiz.</p>
+          </article>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ===================== Über uns ===================== -->
-  <section class="section" id="ueber-uns">
-    <div class="wrap two-col">
-      <div>
-        <h2>Über Scoff</h2>
-        <!-- PLATZHALTER: drei bis fünf Sätze von deinem Kollegen selbst.
+    <!-- ===================== Über uns ===================== -->
+    <section class="section" id="ueber-uns">
+      <div class="wrap">
+        <div>
+          <h2>Über SCOFF</h2>
+          <!-- PLATZHALTER: drei bis fünf Sätze von deinem Kollegen selbst.
              Wer dahintersteht, seit wann, wie er zu den Produzenten gekommen ist. -->
-        <p class="sub sub--tight">Hier stehen drei bis fünf Sätze darüber, wer hinter Scoff steht, seit wann es die Firma gibt und wie die Verbindung nach Italien entstanden ist. Dieser Text entscheidet am meisten über Vertrauen.</p>
-        <p class="sub">Ein zweiter Absatz kann konkret werden: welche Regionen, wie viele Produzenten, was als Nächstes dazukommt.</p>
+          <p class="sub sub--tight">Hier stehen drei bis fünf Sätze darüber, wer hinter SCOFF steht, seit wann es die
+            Firma gibt und wie die Verbindung nach Italien entstanden ist. Dieser Text entscheidet am meisten über
+            Vertrauen.</p>
+          <p class="sub">Ein zweiter Absatz kann konkret werden: welche Regionen, wie viele Produzenten, was als
+            Nächstes dazukommt.</p>
+        </div>
       </div>
-      <!-- PLATZHALTER: durch ein echtes Foto ersetzen, zum Beispiel beim Produzenten:
-           <img src="images/produzent.jpg" alt="Kurze Beschreibung des Bildes"> -->
-      <div class="placeholder">Foto folgt</div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ===================== Team ===================== -->
-  <section class="section section--soft" id="team">
-    <div class="wrap">
-      <h2>Wer für Sie da ist</h2>
-      <p class="sub">Bei Scoff haben Sie eine feste Ansprechperson – keine Hotline.</p>
+    <!-- ===================== Team ===================== -->
+    <section class="section section--soft" id="team">
+      <div class="wrap">
+        <h2>Wer für Sie da ist</h2>
+        <p class="sub">Bei SCOFF haben Sie einen bestimmten Ansprechpartner.</p>
 
-      <div class="team">
+        <div class="team">
 
-        <article class="person">
-          <!-- PLATZHALTER: sobald das Foto da ist, das div durch dieses img ersetzen:
+          <article class="person">
+            <!-- PLATZHALTER: sobald das Foto da ist, das div durch dieses img ersetzen:
                <img class="person-foto" src="images/person-1.jpg" alt="Portrait von VORNAME NACHNAME"> -->
-          <div class="person-foto person-foto--leer" aria-hidden="true">Foto folgt</div>
-          <!-- PLATZHALTER: echten Namen, Funktion und einen Satz eintragen. -->
-          <h3>Vorname Nachname</h3>
-          <p class="person-rolle">Funktion</p>
-          <p>Ein Satz dazu, wofür diese Person zuständig ist und was Kunden von ihr erwarten können.</p>
-          <p class="person-kontakt">
-            <a href="mailto:info@scoff.ch">info@scoff.ch</a>
-          </p>
-        </article>
+            <div class="person-foto person-foto--leer" aria-hidden="true">Foto folgt</div>
+            <!-- PLATZHALTER: echten Namen, Funktion und einen Satz eintragen. -->
+            <h3>Vorname Nachname</h3>
+            <p class="person-rolle">Funktion</p>
+            <p>Ein Satz dazu, wofür diese Person zuständig ist und was Kunden von ihr erwarten können.</p>
+            <p class="person-kontakt">
+              <a href="mailto:info@scoff.ch">info@scoff.ch</a>
+            </p>
+          </article>
 
-        <article class="person">
-          <!-- PLATZHALTER: sobald das Foto da ist, das div durch dieses img ersetzen:
+          <article class="person">
+            <!-- PLATZHALTER: sobald das Foto da ist, das div durch dieses img ersetzen:
                <img class="person-foto" src="images/person-2.jpg" alt="Portrait von VORNAME NACHNAME"> -->
-          <div class="person-foto person-foto--leer" aria-hidden="true">Foto folgt</div>
-          <!-- PLATZHALTER: echten Namen, Funktion und einen Satz eintragen. -->
-          <h3>Vorname Nachname</h3>
-          <p class="person-rolle">Funktion</p>
-          <p>Ein Satz dazu, wofür diese Person zuständig ist und was Kunden von ihr erwarten können.</p>
-          <p class="person-kontakt">
-            <a href="mailto:info@scoff.ch">info@scoff.ch</a>
-          </p>
-        </article>
+            <div class="person-foto person-foto--leer" aria-hidden="true">Foto folgt</div>
+            <!-- PLATZHALTER: echten Namen, Funktion und einen Satz eintragen. -->
+            <h3>Vorname Nachname</h3>
+            <p class="person-rolle">Funktion</p>
+            <p>Ein Satz dazu, wofür diese Person zuständig ist und was Kunden von ihr erwarten können.</p>
+            <p class="person-kontakt">
+              <a href="mailto:info@scoff.ch">info@scoff.ch</a>
+            </p>
+          </article>
 
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ===================== Kontakt ===================== -->
-  <section class="section" id="kontakt">
-    <div class="wrap">
-      <h2>Anfrage und Preisliste</h2>
-      <p class="sub">Schreiben Sie uns, was Sie suchen – Sie erhalten in der Regel innert 24 Stunden eine Antwort mit Vorschlag und Preisen.</p>
+    <!-- ===================== Kontakt ===================== -->
+    <section class="section" id="kontakt">
+      <div class="wrap">
+        <h2>Anfrage und Preisliste</h2>
+        <p class="sub">Schreiben Sie uns, was Sie suchen – Sie erhalten in der Regel innert 24 Stunden eine Antwort mit
+          Vorschlag und Preisen.</p>
 
-      <!-- PLATZHALTER: DEINE_FORM_ID in der nächsten Zeile durch die echte
+        <!-- PLATZHALTER: DEINE_FORM_ID in der nächsten Zeile durch die echte
            Formspree-ID ersetzen. Sie steht nach dem Anlegen des Formulars auf
            formspree.io und sieht etwa so aus: xayzbwqr
            Vorher verschickt das Formular nichts. -->
-      <form class="form" action="https://formspree.io/f/DEINE_FORM_ID" method="POST">
+        <form class="form" action="https://formspree.io/f/DEINE_FORM_ID" method="POST">
 
-        <!-- Nach dem Absenden landet der Besucher auf der Danke-Seite. -->
-        <input type="hidden" name="_next" value="https://canuma36.github.io/Scoff/danke.html">
-        <!-- Betreffzeile der Mail, die bei euch ankommt. -->
-        <input type="hidden" name="_subject" value="Neue Anfrage über die Website">
-        <!-- Spamfalle: für Menschen unsichtbar. Füllt ein Bot sie aus,
+          <!-- Nach dem Absenden landet der Besucher auf der Danke-Seite. -->
+          <input type="hidden" name="_next" value="https://canuma-studio.github.io/Scoff/danke.html">
+          <!-- Betreffzeile der Mail, die bei euch ankommt. -->
+          <input type="hidden" name="_subject" value="Neue Anfrage über die Website">
+          <!-- Spamfalle: für Menschen unsichtbar. Füllt ein Bot sie aus,
              verwirft Formspree die Anfrage. -->
-        <input type="text" name="_gotcha" class="gotcha" tabindex="-1" autocomplete="off">
+          <input type="text" name="_gotcha" class="gotcha" tabindex="-1" autocomplete="off">
 
-        <div class="form-row">
-          <div>
-            <label for="name">Name
-              <input type="text" id="name" name="name" placeholder="Vor- und Nachname" required>
-            </label>
+          <div class="form-row">
+            <div>
+              <label for="name">Name
+                <input type="text" id="name" name="name" placeholder="Vor- und Nachname" required>
+              </label>
+            </div>
+            <div>
+              <label for="email">E-Mail
+                <input type="email" id="email" name="email" placeholder="name@beispiel.ch" required>
+              </label>
+            </div>
           </div>
-          <div>
-            <label for="email">E-Mail
-              <input type="email" id="email" name="email" placeholder="name@beispiel.ch" required>
-            </label>
-          </div>
-        </div>
 
-        <label for="typ">Ich schreibe als
-          <select id="typ" name="typ">
-            <option>Privatperson</option>
-            <option>Restaurant oder Bar</option>
-            <option>Handel oder Wiederverkauf</option>
-            <option>Anderes</option>
-          </select>
-        </label>
+          <label for="typ">Ich schreibe als
+            <select id="typ" name="typ">
+              <option>Privatperson</option>
+              <option>Restaurant oder Bar</option>
+              <option>Handel oder Wiederverkauf</option>
+              <option>Anderes</option>
+            </select>
+          </label>
 
-        <label for="anliegen">Worum geht es?
-          <select id="anliegen" name="anliegen">
-            <option>Preisliste zusenden</option>
-            <option>Beratung zu einem Produkt</option>
-            <option>Bestellung</option>
-            <option>Anderes</option>
-          </select>
-        </label>
+          <label for="anliegen">Worum geht es?
+            <select id="anliegen" name="anliegen">
+              <option>Preisliste zusenden</option>
+              <option>Beratung zu einem Produkt</option>
+              <option>Bestellung</option>
+              <option>Anderes</option>
+            </select>
+          </label>
 
-        <label for="nachricht">Ihre Nachricht
-          <textarea id="nachricht" name="nachricht" placeholder="Was suchen Sie? Für welchen Anlass oder welchen Betrieb?" required></textarea>
-        </label>
+          <label for="nachricht">Ihre Nachricht
+            <textarea id="nachricht" name="nachricht"
+              placeholder="Was suchen Sie? Für welchen Anlass oder welchen Betrieb?" required></textarea>
+          </label>
 
-        <div><button class="btn" type="submit">Anfrage senden</button></div>
-      </form>
+          <div><button class="btn" type="submit">Anfrage senden</button></div>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== Fusszeile ===================== -->
+  <footer class="site-footer">
+    <div class="wrap">
+      <!-- PLATZHALTER: echte Adresse, Telefon und E-Mail eintragen. -->
+      <div>
+        <strong>SCOFF</strong>
+        Strasse 1<br>
+        8000 Zürich
+      </div>
+      <div>
+        <strong>Kontakt</strong>
+        <a href="tel:+41000000000">+41 00 000 00 00</a><br>
+        <a href="mailto:info@scoff.ch">info@scoff.ch</a>
+      </div>
+      <div>
+        <strong>Öffnungszeiten</strong>
+        Mo–Fr 08:00–17:00
+      </div>
+      <div>
+        <strong>Rechtliches</strong>
+        <a href="impressum.html">Impressum</a><br>
+        <a href="datenschutz.html">Datenschutz</a><br>
+        <span>© <span id="jahr">2026</span> SCOFF</span>
+      </div>
     </div>
-  </section>
+  </footer>
 
-</main>
-
-<!-- ===================== Fusszeile ===================== -->
-<footer class="site-footer">
-  <div class="wrap">
-    <!-- PLATZHALTER: echte Adresse, Telefon und E-Mail eintragen. -->
-    <div>
-      <strong>Scoff</strong>
-      Strasse 1<br>
-      8000 Zürich
-    </div>
-    <div>
-      <strong>Kontakt</strong>
-      <a href="tel:+41000000000">+41 00 000 00 00</a><br>
-      <a href="mailto:info@scoff.ch">info@scoff.ch</a>
-    </div>
-    <div>
-      <strong>Öffnungszeiten</strong>
-      Mo–Fr 08:00–17:00
-    </div>
-    <div>
-      <strong>Rechtliches</strong>
-      <a href="impressum.html">Impressum</a><br>
-      <a href="datenschutz.html">Datenschutz</a><br>
-      <span>© <span id="jahr">2026</span> Scoff</span>
-    </div>
-  </div>
-</footer>
-
-<script src="script.js?v=8"></script>
+  <script src="script.js?v=8"></script>
 </body>
+
 </html>
