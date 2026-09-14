@@ -320,6 +320,17 @@ h3 { font-size: 1.12rem; font-weight: 700; margin: 0 0 .5rem; }
 .produkt-text p { color: var(--muted); font-size: .94rem; margin: 0 0 .7rem; }
 .produkt-text p:last-child { margin-bottom: 0; }
 
+/* Damit die Datenlisten aller Karten auf gleicher Hoehe beginnen, bekommen
+   Titel und Herkunftszeile so viel Platz, wie die laengste von beiden braucht:
+   zwei Zeilen. Nur ab 821px noetig - auf dem Handy steht immer nur eine
+   Karte im Bild, dort waere der reservierte Platz nur eine Luecke. */
+@media (min-width: 821px) {
+  /* Zeilenhoehe fest, damit min-height genau zwei Zeilen entspricht. */
+  .produkt-text h3 { line-height: 1.25; min-height: 2.5em; }
+  .produkt .produkt-herkunft { line-height: 1.35; min-height: 2.7em; }
+  .produkt--mehr .produkt-text h3 { min-height: 0; }
+}
+
 .produkt .produkt-herkunft {
   color: var(--accent);
   font-weight: 700;
