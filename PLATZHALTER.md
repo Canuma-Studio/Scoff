@@ -27,6 +27,19 @@ Diese Liste abarbeiten, dann ist die Seite fertig.
 - [ ] **Die zwei Personen** – Vorname, Nachname, Funktion, je ein Satz,
       je ein Portraitfoto (möglichst quadratisch, wird rund beschnitten)
 
+## 1b. Bereits geliefert (14.09.2026)
+
+- [x] Firmenname, Adresse und UID – im Handelsregister geprüft:
+      SCOFF Stefano Hoffmeister, Seestrasse 86, 8803 Rüschlikon,
+      CHE-488.277.838, Einzelunternehmen
+- [x] Produktangaben zu allen drei Produkten, Namen und Jahrgänge bestätigt
+- [x] Über-uns-Text
+- [x] Vornamen der zwei Personen (Stefano Hoffmeister, Samuele)
+
+**Weiterhin offen:** E-Mail-Adresse (zwingend fürs Impressum), Telefon,
+Funktionen und Portraits der zwei Personen, Samueles Nachname,
+Preisliste als PDF, Öffnungszeiten.
+
 ## 2. Formspree einrichten
 
 - [ ] Konto auf formspree.io anlegen (kostenloser Plan: 50 Anfragen pro Monat)

@@ -8,6 +8,26 @@
 
 ---
 
+---
+
+## ⚠️ VOR DEM LIVEGANG UNBEDINGT ENTFERNEN
+
+Die Seite läuft seit 14.09.2026 im **Vorschau-Modus**. Solange sie unfertig ist,
+soll sie nicht bei Google auftauchen und Besucher sollen sehen, dass sie im
+Aufbau ist. Drei Dinge sind dafür eingebaut – **alle drei müssen weg, sobald
+die Seite offiziell live geht**, sonst findet Google die Seite nie:
+
+1. `robots.txt` – auf `Allow: /` umstellen (oder Datei löschen)
+2. `index.html` – die Zeile `<meta name="robots" content="noindex, nofollow">`
+   entfernen. **Nur in index.html!** Impressum, Datenschutz und Danke-Seite
+   haben ein dauerhaftes `noindex`, das bleibt.
+3. Alle vier HTML-Dateien – den Block `<div class="vorschau">` entfernen,
+   dazu die Regel `.vorschau` in Abschnitt 5b von `styles.css`
+
+Suchen mit: `grep -rn "vorschau\|noindex" *.html robots.txt`
+
+---
+
 ## Wo wir stehen
 
 Die Seite ist inhaltlich fertig gebaut. Es fehlen nur noch echte Daten –

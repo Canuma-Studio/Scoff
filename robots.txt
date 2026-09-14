@@ -1,0 +1,6 @@
+# Solange die Seite im Aufbau ist, soll sie nicht bei Suchmaschinen erscheinen.
+# Vor dem Livegang: diese Datei auf "Allow: /" umstellen, die noindex-Zeile
+# aus index.html entfernen und das Vorschau-Banner aus allen vier
+# HTML-Dateien loeschen. Siehe STAND.md.
+User-agent: *
+Disallow: /

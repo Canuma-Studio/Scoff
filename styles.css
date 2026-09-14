@@ -161,6 +161,19 @@ h3 { font-size: 1.12rem; font-weight: 700; margin: 0 0 .5rem; }
 .btn--small { padding: .55rem 1.1rem; font-size: .88rem; }
 .btn--light { background: #fff; color: var(--dark); }
 
+/* --- 5b. Vorschau-Hinweis ------------------------------------------------ */
+/* Dezenter Streifen ganz oben, solange die Seite unfertig ist. Scrollt weg,
+   die Kopfzeile darunter bleibt wie gewohnt oben kleben.
+   Vor dem Livegang zusammen mit dem Banner im HTML entfernen. */
+.vorschau {
+  background: var(--accent-soft);
+  color: var(--ink);
+  border-bottom: 1px solid var(--line);
+  text-align: center;
+  font-size: .82rem;
+  padding: .55rem var(--gap);
+}
+
 /* --- 6. Kopfzeile -------------------------------------------------------- */
 .site-header {
   position: sticky; top: 0; z-index: 20;
