@@ -38,7 +38,7 @@ Diese Liste abarbeiten, dann ist die Seite fertig.
 
 **Weiterhin offen:** E-Mail-Adresse (zwingend fürs Impressum), Telefon,
 Funktionen und Portraits der zwei Personen, Samueles Nachname,
-Preisliste als PDF, Öffnungszeiten.
+(Preisliste als PDF und Öffnungszeiten entfallen – Entscheid 28.09.2026).
 
 ## 2. Formspree einrichten
 

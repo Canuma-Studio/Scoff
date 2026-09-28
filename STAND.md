@@ -137,11 +137,14 @@ DNS-Eintrag, es läuft dort also noch nichts).
        Adresse des Kollegen hinzufügen, er bestätigt die Mail bei sich, dann im
        Formular „Scoff Kontakt“ unter Settings auswählen. Am Code ändert sich
        dabei nichts. Gratis-Plan: 50 Anfragen pro Monat.
+       **Achtung Spam:** Die erste Testmail landete bei info@canuma.ch im
+       Spam-Ordner. Der Kollege soll nach der Umstellung eine Testanfrage
+       schicken und die Mail bei sich ebenfalls als „Kein Spam“ markieren.
 3. [ ] **Portraits und Funktionen** der zwei Personen; Samueles Nachname fehlt
-4. [ ] **Preisliste als PDF** vom Kollegen, Download-Knopf einbauen
-5. [ ] **Öffnungszeiten** – stehen in der Fusszeile noch als Platzhalter
-       (Mo–Fr 08:00–17:00). Bei einem Versandhändler ohne Laden vielleicht
-       besser durch „Erreichbarkeit" ersetzen oder ganz streichen.
+4. [ ] **Domain scoff.ch auf die Website zeigen lassen** – liegt bei
+       **Hostpoint**. DNS-Einträge für GitHub Pages setzt der Kollege selbst,
+       `CNAME`-Datei im Repo und Eintrag in den Pages-Einstellungen macht Philipp.
+       Die Mail-Einträge (MX) bei Hostpoint dürfen dabei nicht angefasst werden.
 6. [ ] **Vorschau-Modus aufheben** – siehe Warnblock ganz oben
 7. [ ] **Stefano Impressum und Datenschutz lesen und bestätigen lassen.**
        Er ist als Betreiber verantwortlich, nicht Philipp. Eine kurze
@@ -153,7 +156,17 @@ die Vornamen sind eingesetzt. Telefonnummer fällt bewusst weg – der Kollege
 gibt keine an, sie ist auch nicht Pflicht. Produktnamen und Jahrgänge sind
 vom Kollegen bestätigt.
 
-## Offene Frage vom Kollegen
+## Entscheide vom 28.09.2026 (Call mit dem Kollegen)
+
+- **Keine Preisliste als PDF.** Preise gibt es auf Anfrage; Knopf, Überschrift
+  und Formularauswahl sagen jetzt „Preise anfragen“ bzw. „Anfrage“.
+- **Öffnungszeiten ganz weggelassen** – Spalte in der Fusszeile aller vier
+  Seiten entfernt.
+- **Texte ändert Philipp**, wenn der Kollege etwas braucht. Kein
+  Redaktionssystem, die Frage unten ist damit erledigt.
+- E-Mail-Adresse ist eingerichtet, genauer Name folgt; Portraits sind vorhanden.
+
+## Offene Frage vom Kollegen (erledigt, siehe oben)
 
 Er hat gefragt, ob er Texte selbst bearbeiten kann. Drei Wege besprochen:
 über Philipp (Aufwand null), direkt auf github.com im Browser (Aufwand null,
