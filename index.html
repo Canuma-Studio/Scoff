@@ -18,7 +18,7 @@
   <!-- Die Nummer hinter dem Dateinamen ist die Version. Wird sie erhöht,
        holen Browser die Datei neu statt aus dem Zwischenspeicher.
        Nach jeder Änderung an styles.css oder script.js hochzählen. -->
-  <link rel="stylesheet" href="styles.css?v=13">
+  <link rel="stylesheet" href="styles.css?v=14">
 </head>
 
 <body>
@@ -286,9 +286,11 @@
 
         <!-- Formspree-Formular "Scoff Kontakt" im Konto von Canuma Studio (info@canuma.ch).
            Die Zieladresse der Anfragen wird auf formspree.io umgestellt, nicht hier. -->
-        <form class="form" action="https://formspree.io/f/xbglqllw" method="POST">
+        <form class="form" id="anfrage-formular" action="https://formspree.io/f/xbglqllw" method="POST">
 
-          <!-- Nach dem Absenden landet der Besucher auf der Danke-Seite. -->
+          <!-- Weiterleitung auf die Danke-Seite. Im Gratis-Plan von Formspree wird dieses
+             Feld ignoriert – die Weiterleitung übernimmt deshalb script.js. Das Feld
+             bleibt als Rückfall für einen späteren bezahlten Plan. -->
           <input type="hidden" name="_next" value="https://canuma-studio.github.io/Scoff/danke.html">
           <!-- Betreffzeile der Mail, die bei euch ankommt. -->
           <input type="hidden" name="_subject" value="Neue Anfrage über die Website">
@@ -332,6 +334,11 @@
               placeholder="Was suchen Sie? Für welchen Anlass oder welchen Betrieb?" required></textarea>
           </label>
 
+          <p class="form-fehler" id="form-fehler" role="alert" hidden>
+            Die Anfrage konnte leider nicht gesendet werden. Bitte versuchen Sie es
+            in einem Moment nochmals.
+          </p>
+
           <div><button class="btn" type="submit">Anfrage senden</button></div>
         </form>
       </div>
@@ -366,7 +373,7 @@
     </div>
   </footer>
 
-  <script src="script.js?v=13"></script>
+  <script src="script.js?v=14"></script>
 </body>
 
 </html>

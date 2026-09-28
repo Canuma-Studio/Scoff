@@ -4,7 +4,7 @@
 > Neuer Chat? Zuerst diese Datei lesen, dann weitermachen.
 > Claude aktualisiert sie am Ende jeder Sitzung.
 
-**Letzte Aktualisierung:** 14.09.2026
+**Letzte Aktualisierung:** 28.09.2026
 
 ---
 
@@ -79,7 +79,7 @@ Entschieden dazu:
       Pages namentlich genannt
 - [x] `danke.html` – Bestätigungsseite nach dem Absenden
 - [x] Kontaktformular auf Formspree umgestellt, mit Spamfalle und
-      Weiterleitung auf die Danke-Seite (**Form-ID fehlt noch**)
+      Weiterleitung auf die Danke-Seite
 - [x] Startseite auf Handel umgebaut: Hero, Sortiment, „Warum über uns",
       „Für wen", Ablauf
 - [x] Team-Abschnitt für zwei Personen
@@ -112,6 +112,14 @@ Entschieden dazu:
 - [x] Hero-Überschrift zweiteilig gesetzt (`.h1-zusatz` in `styles.css`):
       „Italienische Feinkost“ gross, „Manufakturprodukte · Weine“ kleiner
       darunter – aus vier gerenderten Varianten ausgewählt
+- [x] **Formspree eingerichtet (28.09.2026):** Konto von Canuma Studio
+      (info@canuma.ch), Formular „Scoff Kontakt“, Form-ID `xbglqllw` in
+      `index.html`. Testanfrage über die Live-Seite ging durch.
+- [x] Weiterleitung auf `danke.html` per JavaScript (`script.js`, Abschnitt
+      „Kontaktformular“): Der Gratis-Plan von Formspree ignoriert `_next` und
+      zeigt sonst seine eigene Danke-Seite. Das Skript schickt das Formular im
+      Hintergrund ab und leitet danach selbst weiter; scheitert es, erscheint
+      `.form-fehler` unter dem Formular. Versionsnummer auf `?v=14`.
 
 ## Als Nächstes
 
@@ -124,9 +132,11 @@ DNS-Eintrag, es läuft dort also noch nichts).
        Suchen mit `grep -rn "info@scoff.ch" *.html`.
        Danach die beiden orangen `platzhalter`-Kästen in `impressum.html`
        und `datenschutz.html` löschen – dann ist das Impressum vollständig.
-2. [ ] **Formspree** – Konto anlegen, Ziel-E-Mail hinterlegen, `DEINE_FORM_ID`
-       in `index.html` ersetzen, Testanfrage senden, Weiterleitung auf
-       `danke.html` prüfen
+2. [ ] **Formspree-Zieladresse umstellen** – Anfragen gehen vorerst an
+       info@canuma.ch. Auf formspree.io unter Account → Linked Emails die
+       Adresse des Kollegen hinzufügen, er bestätigt die Mail bei sich, dann im
+       Formular „Scoff Kontakt“ unter Settings auswählen. Am Code ändert sich
+       dabei nichts. Gratis-Plan: 50 Anfragen pro Monat.
 3. [ ] **Portraits und Funktionen** der zwei Personen; Samueles Nachname fehlt
 4. [ ] **Preisliste als PDF** vom Kollegen, Download-Knopf einbauen
 5. [ ] **Öffnungszeiten** – stehen in der Fusszeile noch als Platzhalter
@@ -255,5 +265,6 @@ Wichtig: beides für `/Users/canuma/Projekt`, nicht für den Unterordner
   **nicht** – das erneuert nur die HTML-Datei. Richtig ist: in allen vier
   HTML-Dateien die Versionsnummer hinter `styles.css?v=` und `script.js?v=`
   hochzählen. Das gehört nach jeder Änderung an diesen beiden Dateien gemacht.
+- **Befehle in PowerShell (Windows-PC)** mit `;` verketten, nicht mit `&&`.
 - Kamerafotos sind 3–5 MB gross und müssen vor dem Einbauen verkleinert
   werden, sonst lädt die Seite auf dem Handy ewig. Zielgrösse rund 60 KB.

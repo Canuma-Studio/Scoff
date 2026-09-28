@@ -1,6 +1,6 @@
 /* ==========================================================================
    Scoff – Seitenskript
-   Aktuell zwei kleine Aufgaben: Menü auf dem Handy, Jahreszahl im Footer.
+   Menü auf dem Handy, Jahreszahl, Sortiment-Slider, Kopfzeile, Formular.
    ========================================================================== */
 
 /* --- Burger-Menü auf schmalen Bildschirmen -------------------------------- */
@@ -84,4 +84,43 @@ if (kopfzeile) {
 
   window.addEventListener('scroll', kopfzeilePruefen, { passive: true });
   kopfzeilePruefen();
+}
+
+/* --- Kontaktformular ------------------------------------------------------
+   Im Gratis-Plan zeigt Formspree nach dem Absenden seine eigene Danke-Seite.
+   Deshalb schickt dieses Stück das Formular im Hintergrund ab und leitet
+   danach selbst auf unsere danke.html weiter. Ohne JavaScript funktioniert
+   das Formular trotzdem – dann eben mit der Seite von Formspree.
+   -------------------------------------------------------------------------- */
+const formular = document.getElementById('anfrage-formular');
+
+if (formular) {
+  const fehler = document.getElementById('form-fehler');
+  const knopf = formular.querySelector('button[type="submit"]');
+  const knopfText = knopf ? knopf.textContent : '';
+
+  formular.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    if (fehler) fehler.hidden = true;
+    if (knopf) {
+      knopf.disabled = true;
+      knopf.textContent = 'Wird gesendet …';
+    }
+
+    try {
+      const antwort = await fetch(formular.action, {
+        method: 'POST',
+        body: new FormData(formular),
+        headers: { Accept: 'application/json' },
+      });
+      if (!antwort.ok) throw new Error('Formspree: ' + antwort.status);
+      window.location.href = 'danke.html';
+    } catch (err) {
+      if (fehler) fehler.hidden = false;
+      if (knopf) {
+        knopf.disabled = false;
+        knopf.textContent = knopfText;
+      }
+    }
+  });
 }
