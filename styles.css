@@ -54,7 +54,14 @@ body {
   background: var(--bg);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
+  /* Fusszeile immer ganz unten, auch auf kurzen Seiten wie danke.html:
+     der Hauptinhalt füllt den freien Platz dazwischen. */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
+
+main { flex: 1 0 auto; }
 
 img { max-width: 100%; display: block; }
 
