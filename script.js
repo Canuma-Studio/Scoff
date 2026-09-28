@@ -102,6 +102,17 @@ if (formular) {
   formular.addEventListener('submit', async (e) => {
     e.preventDefault();
     if (fehler) fehler.hidden = true;
+
+    // Betreff der Mail aussagekräftig machen, z.B.
+    // "Website-Anfrage: Preise anfragen – Maria Muster (Restaurant oder Bar)"
+    const betreff = formular.querySelector('[name="_subject"]');
+    const name = formular.querySelector('#name');
+    const anliegen = formular.querySelector('#anliegen');
+    const typ = formular.querySelector('#typ');
+    if (betreff && name && anliegen && typ) {
+      betreff.value = 'Website-Anfrage: ' + anliegen.value + ' – ' +
+        name.value.trim() + ' (' + typ.value + ')';
+    }
     if (knopf) {
       knopf.disabled = true;
       knopf.textContent = 'Wird gesendet …';

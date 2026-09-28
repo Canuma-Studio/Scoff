@@ -18,7 +18,7 @@
   <!-- Die Nummer hinter dem Dateinamen ist die Version. Wird sie erhöht,
        holen Browser die Datei neu statt aus dem Zwischenspeicher.
        Nach jeder Änderung an styles.css oder script.js hochzählen. -->
-  <link rel="stylesheet" href="styles.css?v=15">
+  <link rel="stylesheet" href="styles.css?v=16">
 </head>
 
 <body>
@@ -291,8 +291,9 @@
           <!-- Weiterleitung auf die Danke-Seite. Im Gratis-Plan von Formspree wird dieses
              Feld ignoriert – die Weiterleitung übernimmt deshalb script.js. Das Feld
              bleibt als Rückfall für einen späteren bezahlten Plan. -->
-          <input type="hidden" name="_next" value="https://canuma-studio.github.io/Scoff/danke.html">
-          <!-- Betreffzeile der Mail, die bei euch ankommt. -->
+          <input type="hidden" name="_next" value="https://scoff-switzerland.ch/danke.html">
+          <!-- Betreffzeile der Mail, die bei euch ankommt. script.js ergänzt sie
+             beim Absenden um Anliegen und Name. -->
           <input type="hidden" name="_subject" value="Neue Anfrage über die Website">
           <!-- Spamfalle: für Menschen unsichtbar. Füllt ein Bot sie aus,
              verwirft Formspree die Anfrage. -->
@@ -301,18 +302,20 @@
           <div class="form-row">
             <div>
               <label for="name">Name
-                <input type="text" id="name" name="name" placeholder="Vor- und Nachname" required>
+                <input type="text" id="name" name="Name" placeholder="Vor- und Nachname" required>
               </label>
             </div>
             <div>
               <label for="email">E-Mail
+                <!-- name="email" muss so bleiben: Formspree setzt damit die Antwortadresse,
+                     der Kollege kann in seinem Postfach direkt auf "Antworten" klicken. -->
                 <input type="email" id="email" name="email" placeholder="name@beispiel.ch" required>
               </label>
             </div>
           </div>
 
           <label for="typ">Ich schreibe als
-            <select id="typ" name="typ">
+            <select id="typ" name="Kundentyp">
               <option>Privatperson</option>
               <option>Restaurant oder Bar</option>
               <option>Handel oder Wiederverkauf</option>
@@ -321,7 +324,7 @@
           </label>
 
           <label for="anliegen">Worum geht es?
-            <select id="anliegen" name="anliegen">
+            <select id="anliegen" name="Anliegen">
               <option>Preise anfragen</option>
               <option>Beratung zu einem Produkt</option>
               <option>Bestellung</option>
@@ -330,7 +333,7 @@
           </label>
 
           <label for="nachricht">Ihre Nachricht
-            <textarea id="nachricht" name="nachricht"
+            <textarea id="nachricht" name="Nachricht"
               placeholder="Was suchen Sie? Für welchen Anlass oder welchen Betrieb?" required></textarea>
           </label>
 
@@ -367,7 +370,7 @@
     </div>
   </footer>
 
-  <script src="script.js?v=15"></script>
+  <script src="script.js?v=16"></script>
 </body>
 
 </html>
