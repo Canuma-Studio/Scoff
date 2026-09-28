@@ -42,10 +42,12 @@ Preisliste als PDF, Öffnungszeiten.
 
 ## 2. Formspree einrichten
 
-- [ ] Konto auf formspree.io anlegen (kostenloser Plan: 50 Anfragen pro Monat)
-- [ ] Neues Formular erstellen, Ziel-E-Mail hinterlegen
-- [ ] Die Form-ID (z.B. `xayzbwqr`) kopieren
-- [ ] In `index.html` `DEINE_FORM_ID` durch die echte ID ersetzen
+- [x] Konto auf formspree.io angelegt (28.09.2026, mit info@canuma.ch – Konto von Canuma Studio)
+- [x] Formular „Scoff Kontakt" erstellt, Form-ID `xbglqllw`
+- [x] Form-ID in `index.html` eingetragen
+- [ ] Ziel-E-Mail auf die Adresse des Kollegen umstellen: auf formspree.io unter
+      Account → Linked Emails hinzufügen, Kollege bestätigt die Mail, dann im
+      Formular unter Settings auswählen (vorerst gehen Anfragen an info@canuma.ch)
 - [ ] Testanfrage über die Live-Seite senden und prüfen, ob die Mail ankommt
 - [ ] Prüfen, ob die Weiterleitung auf `danke.html` funktioniert
 
